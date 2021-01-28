@@ -1,12 +1,14 @@
 // Import font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); // 'Noto Sans KR', sans-serif !important;
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); // 'Fira Mono', monospace;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 // Color variable
 $white: #fff;
 $blue: #247fe0;
 $darkblue: #0B5AB0;
 $green: #24e079;
+$gray: #efefef;
 
 // Breakpoint variable
 $lg: 1200px;
@@ -20,4 +22,56 @@ $md: 770px;
 html, body {
     width: 100%;
     height: 100%;
+}
+
+// Header.js
+.header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid $gray;
+    .inner {
+        width: 1200px;
+        margin: auto;
+        position: relative;
+        svg {
+            position: absolute;
+            top: 27%;
+            left: 10%;
+            cursor: pointer;
+        }
+        .logo {
+            margin: auto;
+            line-height: 70px;
+            font-size: 2rem;
+            font-weight: bold;
+            span {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid $gray;
+    .inner {
+        width: 1200px;
+        margin: auto;
+        ul {
+            display: flex;
+            align-items: center;
+            // text-align: center;
+            li {
+                width: 25%;
+                padding: 20px;
+                border-left: 1px solid $gray;
+            }
+            li:last-child {
+                border-left: 0;
+                border-right: 1px solid $gray;
+            }
+        }
+    }
 }
