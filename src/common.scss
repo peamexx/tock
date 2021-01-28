@@ -9,6 +9,8 @@ $blue: #247fe0;
 $darkblue: #0B5AB0;
 $green: #24e079;
 $gray: #efefef;
+$pos: #ff4444;
+$nag: #17a6ff;
 
 // Breakpoint variable
 $lg: 1200px;
@@ -17,6 +19,7 @@ $md: 770px;
 // Common css
 * {
     font-family: 'Noto Sans KR', sans-serif !important;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -51,6 +54,70 @@ html, body {
     }
 }
 
+// Home.js
+.home {
+    width: 100%;
+    .inner {
+        width: 800px;
+        margin: auto;
+        text-align: left;
+        > div {
+            margin-top: 30px;
+            overflow: hidden;
+            h3 {
+                font-size: 1.2rem;
+                // font-weight: bold;
+            }
+            > div {
+                float: left;
+                width: 49%;
+                margin-right: 2%;
+                padding: 20px;
+                h4 {
+                    margin-bottom: 10px;
+                    a {
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
+                }
+                .num {
+                    .price {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                    }
+                    p {
+                        display: inline;
+                        margin-left: 15px;
+                    }
+                }
+                .txt {
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: 0.9rem;
+                    dt {
+                        display: inline;
+                        margin-right: 3px;
+                    }
+                    dd {
+                        display: inline;
+                        margin-right: 5px;
+                        padding-right: 5px;
+                        border-right: 1px solid $gray;
+                        font-weight: bold;
+                    }
+                    dd:last-child {
+                        border: 0;
+                    }
+                }
+            }
+            > div:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Footer.js
 .footer {
     width: 100%;
     position: fixed;
@@ -74,4 +141,13 @@ html, body {
             }
         }
     }
+}
+
+// Common class
+.pos {
+    color: $pos;
+}
+
+.nag {
+    color: $nag;
 }
