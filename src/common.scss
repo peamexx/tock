@@ -199,6 +199,37 @@ html, body {
     }
 }
 
+// NotFound.js
+.notFound {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: $gray;
+    .inner {
+        width: 1000px;
+        height: 100%;
+        margin: auto;
+        background-color: $white;
+        position: relative;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            p {
+                margin-bottom: 20px;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            button {
+                padding: 15px;
+                border-radius: 5px;
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+}
+
 // Footer.js
 .footer {
     width: 100%;

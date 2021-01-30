@@ -3,8 +3,8 @@ function Footer() {
     <div className="footer">
         <div className="inner">
             <ul>
-                <li><a href="#">홈</a></li>
-                <li><a href="#">관심목록</a></li>
+                <li><a href="/">홈</a></li>
+                <li><a href="/favorite">관심목록</a></li>
                 <li><a href="#">지표</a></li>
                 <li><a href="#">?</a></li>
                 <li><a href="#">!</a></li>

@@ -207,6 +207,41 @@ html, body {
   font-weight: bold;
 }
 
+.notFound {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #efefef;
+}
+
+.notFound .inner {
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.notFound .inner span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notFound .inner span p {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.notFound .inner span button {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #247fe0;
+  color: #fff;
+}
+
 .footer {
   width: 100%;
   position: fixed;
