@@ -61,57 +61,69 @@ html, body {
         width: 800px;
         margin: auto;
         text-align: left;
-        > div {
+        .section1 {
+            > div { // .domestic .usa
+                margin-top: 15px;
+                overflow: hidden;
+                > div { // .kospi .kosdaq .sp500 .nasdaq
+                    float: left;
+                    width: 49%;
+                    margin-right: 2%;
+                    padding: 20px;
+                    h4 {
+                        margin-bottom: 10px;
+                        a {
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                        }
+                    }
+                    .num {
+                        .price {
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                        }
+                        p {
+                            display: inline;
+                            margin-left: 15px;
+                        }
+                    }
+                    canvas {
+                        position: relative;
+                        left: -10px;
+                        margin-top: 10px;
+                    }
+                    .txt {
+                        margin-top: 10px;
+                        text-align: center;
+                        font-size: 0.9rem;
+                        dt {
+                            display: inline;
+                            margin-right: 3px;
+                        }
+                        dd {
+                            display: inline;
+                            margin-right: 5px;
+                            padding-right: 5px;
+                            border-right: 1px solid $gray;
+                        }
+                        dd:last-child {
+                            border: 0;
+                        }
+                    }
+                }
+                > div:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .section {
             margin-top: 30px;
-            overflow: hidden;
             h3 {
+                margin-left: 15px;
+                padding-left: 5px;
+                border-left: 5px solid $blue;
                 font-size: 1.2rem;
-                // font-weight: bold;
-            }
-            > div {
-                float: left;
-                width: 49%;
-                margin-right: 2%;
-                padding: 20px;
-                h4 {
-                    margin-bottom: 10px;
-                    a {
-                        font-size: 1.3rem;
-                        font-weight: bold;
-                    }
-                }
-                .num {
-                    .price {
-                        font-size: 1.4rem;
-                        font-weight: bold;
-                    }
-                    p {
-                        display: inline;
-                        margin-left: 15px;
-                    }
-                }
-                .txt {
-                    margin-top: 10px;
-                    text-align: center;
-                    font-size: 0.9rem;
-                    dt {
-                        display: inline;
-                        margin-right: 3px;
-                    }
-                    dd {
-                        display: inline;
-                        margin-right: 5px;
-                        padding-right: 5px;
-                        border-right: 1px solid $gray;
-                        font-weight: bold;
-                    }
-                    dd:last-child {
-                        border: 0;
-                    }
-                }
-            }
-            > div:last-child {
-                margin-right: 0;
+                font-weight: bold;
             }
         }
     }
@@ -129,14 +141,13 @@ html, body {
         ul {
             display: flex;
             align-items: center;
-            // text-align: center;
+            background-color: $white;
             li {
                 width: 25%;
                 padding: 20px;
                 border-left: 1px solid $gray;
             }
             li:last-child {
-                border-left: 0;
                 border-right: 1px solid $gray;
             }
         }

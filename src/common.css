@@ -52,66 +52,79 @@ html, body {
   text-align: left;
 }
 
-.home .inner > div {
-  margin-top: 30px;
+.home .inner .section1 > div {
+  margin-top: 15px;
   overflow: hidden;
 }
 
-.home .inner > div h3 {
-  font-size: 1.2rem;
-}
-
-.home .inner > div > div {
+.home .inner .section1 > div > div {
   float: left;
   width: 49%;
   margin-right: 2%;
   padding: 20px;
 }
 
-.home .inner > div > div h4 {
+.home .inner .section1 > div > div h4 {
   margin-bottom: 10px;
 }
 
-.home .inner > div > div h4 a {
+.home .inner .section1 > div > div h4 a {
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.home .inner > div > div .num .price {
-  font-size: 1.4rem;
+.home .inner .section1 > div > div .num .price {
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
-.home .inner > div > div .num p {
+.home .inner .section1 > div > div .num p {
   display: inline;
   margin-left: 15px;
 }
 
-.home .inner > div > div .txt {
+.home .inner .section1 > div > div canvas {
+  position: relative;
+  left: -10px;
+  margin-top: 10px;
+}
+
+.home .inner .section1 > div > div .txt {
   margin-top: 10px;
   text-align: center;
   font-size: 0.9rem;
 }
 
-.home .inner > div > div .txt dt {
+.home .inner .section1 > div > div .txt dt {
   display: inline;
   margin-right: 3px;
 }
 
-.home .inner > div > div .txt dd {
+.home .inner .section1 > div > div .txt dd {
   display: inline;
   margin-right: 5px;
   padding-right: 5px;
   border-right: 1px solid #efefef;
-  font-weight: bold;
 }
 
-.home .inner > div > div .txt dd:last-child {
+.home .inner .section1 > div > div .txt dd:last-child {
   border: 0;
 }
 
-.home .inner > div > div:last-child {
+.home .inner .section1 > div > div:last-child {
   margin-right: 0;
+}
+
+.home .inner .section {
+  margin-top: 30px;
+}
+
+.home .inner .section h3 {
+  margin-left: 15px;
+  padding-left: 5px;
+  border-left: 5px solid #247fe0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .footer {
@@ -133,6 +146,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
 }
 
 .footer .inner ul li {
@@ -142,7 +156,6 @@ html, body {
 }
 
 .footer .inner ul li:last-child {
-  border-left: 0;
   border-right: 1px solid #efefef;
 }
 
