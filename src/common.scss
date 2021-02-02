@@ -9,6 +9,7 @@ $blue: #247fe0;
 $darkblue: #0B5AB0;
 $green: #24e079;
 $gray: #efefef;
+$darkgray: #666;
 $pos: #ff4444;
 $nag: #17a6ff;
 
@@ -194,6 +195,106 @@ html, body {
                 border-left: 5px solid $blue;
                 font-size: 1.3rem;
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+// Favorite.js
+.favorite {
+    width: 100%;
+    background-color: $gray;
+    .inner {
+        width: 1000px;
+        margin: auto;
+        background-color: $white;
+        .setting {
+            border-bottom: 1px solid $gray;
+            overflow: hidden;
+            ul {
+                display: flex;
+                li {
+                    flex-grow: 0.1;
+                    text-align: right;
+                }
+                li:first-child {
+                    flex-grow: 2;
+                    text-align: left;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: 8px;
+                        left: 40px;
+
+                    }
+                }
+            }
+        }
+        .list {
+            table {
+                width: 100%;
+                .item {
+                    width: 100%;
+                    display: flex;
+                    padding: 20px;
+                    border-bottom: 1px solid $gray;
+                    text-align: left;
+                    .bar {
+                        position: relative;
+                        .line {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            width: 2px;
+                            height: 100%;
+                            background-color: $darkgray;
+                        }
+                        .box {
+                            position: absolute;
+                            top: 5px;
+                            left: -2px;
+                            width: 6px;
+                            height: 50%;
+                            background-color: $darkgray;
+                        }
+                    }
+                    .tit {
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            padding-right: 30px;
+                            strong {
+                                display: block;
+                                margin-bottom: 5px;
+                                font-size: 1.4rem;
+                                font-weight: bold;
+                            }
+                            .sub {
+                                color: $darkgray !important;
+                            }
+                        }
+                    }
+                    .num {
+                        .price {
+                            margin-bottom: 5px;
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                        }
+                        .volumn {
+                            color: $darkgray !important;
+                        }
+                    }
+                    .changeNum {
+                        padding-top: 2px;
+                        .chgp {
+                            margin-bottom: 5px;
+                        }
+                    }
+                    td {
+                        margin-right: 20px;
+                    }
+                }
             }
         }
     }
