@@ -42,6 +42,10 @@ html, body {
     width: 100%;
     height: 70px;
     border-bottom: 1px solid $gray;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     .inner {
         width: 1200px;
         margin: auto;
@@ -67,6 +71,7 @@ html, body {
 // Home.js
 .home {
     width: 100%;
+    margin-top: 70px;
     background-color: $gray;
     .inner {
         width: 1000px;
@@ -203,29 +208,37 @@ html, body {
 // Favorite.js
 .favorite {
     width: 100%;
+    height: 100vh;
+    margin-top: 70px;
     background-color: $gray;
     .inner {
-        width: 1000px;
+        width: 800px;
+        min-height: 100%;
         margin: auto;
+        padding-bottom: 100px;
         background-color: $white;
+        overflow: hidden;
         .setting {
-            border-bottom: 1px solid $gray;
+            border-bottom: 3px solid $gray;
             overflow: hidden;
             ul {
                 display: flex;
                 li {
-                    flex-grow: 0.1;
-                    text-align: right;
-                }
-                li:first-child {
-                    flex-grow: 2;
+                    flex-grow: 0.2;
+                    padding: 5px 0;
                     text-align: left;
                     position: relative;
                     span {
                         position: absolute;
-                        top: 8px;
+                        top: 14px;
                         left: 40px;
-
+                    }
+                }
+                li:first-child {
+                    flex-grow: 2;
+                    padding-left: 10px;
+                    span {
+                        left: 50px;
                     }
                 }
             }
@@ -259,16 +272,21 @@ html, body {
                         }
                     }
                     .tit {
+                        flex-grow: 1;
                         a {
                             display: block;
                             width: 100%;
                             height: 100%;
                             padding-right: 30px;
                             strong {
-                                display: block;
+                                display: inline-block;
+                                margin-right: 5px;
                                 margin-bottom: 5px;
                                 font-size: 1.4rem;
                                 font-weight: bold;
+                            }
+                            .code {
+                                color: $darkgray !important;
                             }
                             .sub {
                                 color: $darkgray !important;
@@ -286,6 +304,7 @@ html, body {
                         }
                     }
                     .changeNum {
+                        margin-right: 0;
                         padding-top: 2px;
                         .chgp {
                             margin-bottom: 5px;
