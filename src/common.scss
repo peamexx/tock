@@ -10,6 +10,7 @@ $darkblue: #0B5AB0;
 $green: #24e079;
 $gray: #efefef;
 $darkgray: #666;
+$black: #333;
 $pos: #ff4444;
 $nag: #17a6ff;
 
@@ -253,6 +254,7 @@ html, body {
                     border-bottom: 1px solid $gray;
                     text-align: left;
                     .bar {
+                        margin-left: 2%;
                         position: relative;
                         .line {
                             position: absolute;
@@ -282,6 +284,7 @@ html, body {
                                 display: inline-block;
                                 margin-right: 5px;
                                 margin-bottom: 5px;
+                                color: $black !important;
                                 font-size: 1.4rem;
                                 font-weight: bold;
                             }
@@ -294,6 +297,7 @@ html, body {
                         }
                     }
                     .num {
+                        min-width: 12%;
                         .price {
                             margin-bottom: 5px;
                             font-size: 1.3rem;
@@ -304,6 +308,7 @@ html, body {
                         }
                     }
                     .changeNum {
+                        min-width: 7%;
                         margin-right: 0;
                         padding-top: 2px;
                         .chgp {

@@ -1,6 +1,6 @@
 function Item(props) {
   return (
-    <tr className="item">
+    <tr className={ "item " + props.upDown }>
       <td className="bar">
         <span className="line"></span>
         <span className="box"></span>
@@ -12,11 +12,11 @@ function Item(props) {
           <p className="sub">15분 지연</p>
         </a>
       </td>
-      <td className="num nag">
+      <td className="num">
         <p className="price">{ props.price }</p>
         <p className="volumn">{ props.volumn }</p>
       </td>
-      <td className="changeNum nag">
+      <td className="changeNum">
         <p className="chgp">{ props.chgp }</p>
         <p className="chgr">{ props.chgr }%</p>
       </td>

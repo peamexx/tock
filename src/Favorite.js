@@ -12,6 +12,7 @@ function Favorite() {
       volumn: 19961566,
       chgp: 200,
       chgr: 0.24,
+      upDown: 'pos',
     },
     {
       name: 'NAVER',
@@ -21,6 +22,7 @@ function Favorite() {
       volumn: 1193960,
       chgp: 8000,
       chgr: 2.21,
+      upDown: 'pos',
     },
     {
       name: '셀트리온',
@@ -30,6 +32,7 @@ function Favorite() {
       volumn: 1886521,
       chgp: 8000,
       chgr: -2.25,
+      upDown: 'nag',
     },
     {
       name: '헬릭스미스',
@@ -39,6 +42,7 @@ function Favorite() {
       volumn: 1597540,
       chgp: 900,
       chgr: -2.87,
+      upDown: 'nag',
     },
     {
       name: 'SK하이닉스',
@@ -48,8 +52,9 @@ function Favorite() {
       volumn: 3675298,
       chgp: 0,
       chgr: 0,
+      upDown: '',
     },
-  ],;
+  ];
 
   return (
     <div className="favorite">
@@ -63,14 +68,17 @@ function Favorite() {
         </div>
         <div className="list">
           <table>
-            <Item 
-              name={ stockItem[0].name } 
-              code={ stockItem[0].code } 
-              price={ stockItem[0].price.toLocaleString() } 
-              volumn={ stockItem[0].volumn.toLocaleString() }
-              chgp={ stockItem[0].chgp }
-              chgr={ stockItem[0].chgr }
-            />
+            { stockItem.map((item) => 
+              <Item 
+              name={ item.name } 
+              code={ item.code } 
+              price={ item.price.toLocaleString() } 
+              volumn={ item.volumn.toLocaleString() }
+              chgp={ item.chgp }
+              chgr={ item.chgr }
+              upDown={ item.upDown }
+              />
+            ) }
           </table>
         </div>
       </div>
