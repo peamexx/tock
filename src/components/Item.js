@@ -1,4 +1,6 @@
-function Item(props) {
+import ItemSub from './ItemSub';
+
+function Item(props) {  
   return (
     <tr className={ "item " + props.upDown }>
       <td className="bar">
@@ -9,7 +11,7 @@ function Item(props) {
         <a href="#">
           <strong>{ props.name }</strong>
           <span className="code">{ props.code }</span>
-          <p className="sub">15분 지연</p>
+          <ItemSub sub={ props.sub } />
         </a>
       </td>
       <td className="num">
@@ -20,7 +22,7 @@ function Item(props) {
         <p className="chgp">{ props.chgp }</p>
         <p className="chgr">{ props.chgr }%</p>
       </td>
-  </tr>
+    </tr>
   );
 }
 

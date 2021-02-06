@@ -7,7 +7,7 @@ function Favorite() {
     {
       name: '삼성전자',
       code: '005930',
-      sub: false,
+      sub: 15,
       price: 84600,
       volumn: 19961566,
       chgp: 200,
@@ -17,7 +17,7 @@ function Favorite() {
     {
       name: 'NAVER',
       code: '035420',
-      sub: false,
+      sub: 20,
       price: 370500,
       volumn: 1193960,
       chgp: 8000,
@@ -27,7 +27,7 @@ function Favorite() {
     {
       name: '셀트리온',
       code: '068270',
-      sub: false,
+      sub: 0,
       price: 347500,
       volumn: 1886521,
       chgp: 8000,
@@ -37,7 +37,7 @@ function Favorite() {
     {
       name: '헬릭스미스',
       code: '084990',
-      sub: false,
+      sub: -1,
       price: 30500,
       volumn: 1597540,
       chgp: 900,
@@ -47,7 +47,7 @@ function Favorite() {
     {
       name: 'SK하이닉스',
       code: '000660',
-      sub: false,
+      sub: 0,
       price: 130000,
       volumn: 3675298,
       chgp: 0,
@@ -77,6 +77,7 @@ function Favorite() {
               chgp={ item.chgp }
               chgr={ item.chgr }
               upDown={ item.upDown }
+              sub={ item.sub }
               />
             ) }
           </table>
