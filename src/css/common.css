@@ -9,6 +9,10 @@
   color: #17a6ff;
 }
 
+.on {
+  display: block !important;
+}
+
 * {
   font-family: 'Noto Sans KR', sans-serif !important;
   -webkit-box-sizing: border-box;
@@ -359,6 +363,36 @@ html, body {
 
 .favorite .inner .list table .item td {
   margin-right: 20px;
+}
+
+.favorite .inner .layer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.favorite .inner .layer .sortList {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.favorite .inner .layer .sortList li {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.favorite .inner .layer .sortList li:hover {
+  background-color: #efefef;
 }
 
 .opinion {
