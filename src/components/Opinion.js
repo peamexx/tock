@@ -29,6 +29,12 @@ function Opinion(props) {
         },
     ];
 
+    opinionItem.forEach((item, index) => {
+        for(let key in item) {
+            localStorage.setItem(key + index, item[key]);
+        }
+    });
+
     return (
         <div className="opinion">
             <div className="inner">

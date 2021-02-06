@@ -1,20 +1,28 @@
 function OpinionPost() {
+
+    let subject = localStorage.getItem('subject0');
+    let stockName = localStorage.getItem('stockName0');
+    let name = localStorage.getItem('name0');
+    let title = localStorage.getItem('title0');
+    let replyCount = localStorage.getItem('replyCount0');
+    let date = localStorage.getItem('date0');
+
     return (
         <div className="opinionPost">
             <div className="inner">
                 <div className="post">
                     <div className="head">
                         <div className="top">
-                            <span className="subject">위클리 핫</span>
+                            <span className="subject">{ subject }</span>
                             <span className="tit">
-                                <strong className="stockName">[삼성전자]</strong>
-                                <span className="title">삼전 개인 주주들</span>
-                                <span className="replyCount">[15]</span>
+                                <strong className="stockName">{ stockName }</strong>
+                                <span className="title">{ title }</span>
+                                <span className="replyCount">[{ replyCount }]</span>
                             </span>
                         </div>
                         <div className="bottom">
-                            <span className="name">천진반</span>
-                            <span className="date">2020/02/01 16:37</span>
+                            <span className="name">{ name }</span>
+                            <span className="date">{ date }</span>
                         </div>
                     </div>
                     <div className="contents">
@@ -22,7 +30,7 @@ function OpinionPost() {
                     </div>
                     <div className="recommend">
                         <button className="likes">공감 <span className="num">125</span></button>
-                        <button className="dislikes">공감 <span className="num">105</span></button>
+                        <button className="dislikes">비공감 <span className="num">105</span></button>
                     </div>
                 </div>
                 <div className="reply">
