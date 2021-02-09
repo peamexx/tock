@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 function OpinionPost() {
 
     let subject = localStorage.getItem('subject0');
@@ -6,6 +8,17 @@ function OpinionPost() {
     let title = localStorage.getItem('title0');
     let replyCount = localStorage.getItem('replyCount0');
     let date = localStorage.getItem('date0');
+
+    let [likesBtn, setLikesBtn] = useState(17);
+    let [dislikesBtn, setDislikesBtn] = useState(9);
+
+    const incrementCount = (e) => {
+        if(e.target.className == 'likes') {
+            setLikesBtn((likesBtn) => likesBtn + 1);
+        } else {
+            setDislikesBtn((dislikesBtn) => dislikesBtn + 1);
+        }
+    };
 
     return (
         <div className="opinionPost">
@@ -29,8 +42,8 @@ function OpinionPost() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, delectus dignissimos neque similique asperiores sunt commodi illum velit ab ex quos hic accusamus quas molestias repudiandae, voluptatibus autem error aut sed libero. Fugiat assumenda at vero ullam earum cupiditate similique accusantium quasi veniam architecto porro, dolore hic odit voluptatibus pariatur.</p>
                     </div>
                     <div className="recommend">
-                        <button className="likes">공감 <span className="num">125</span></button>
-                        <button className="dislikes">비공감 <span className="num">105</span></button>
+                        <button className="likes" onClick={ incrementCount }>공감 <span className="num">{ likesBtn }</span></button>
+                        <button className="dislikes" onClick={ incrementCount }>비공감 <span className="num">{ dislikesBtn }</span></button>
                     </div>
                 </div>
                 <div className="reply">
