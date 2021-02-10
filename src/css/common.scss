@@ -609,6 +609,81 @@ html, body {
     }
 }
 
+// Find.js
+.find {
+    width: 100%;
+    background-color: $gray;
+    .inner {
+        width: 1000px;
+        height: 100%;
+        min-height: 100vh;
+        margin: auto;
+        margin-top: 70px;
+        padding-bottom: 100px;
+        background-color: $white;
+        position: relative;
+        overflow: hidden;
+        .fixed {
+            position: fixed;
+            top: 70px;
+            width: 1000px;
+            .tab {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    width: 20%;
+                    border-right: 1px solid $gray;
+                    border-bottom: 1px solid $gray;
+                    background-color: $white;
+                    text-align: center;
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 20px;
+                    }
+                }
+                li:last-child {
+                    border-right: 0;
+                }
+            }
+            .search {
+                .searchBox {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: 0;
+                    background-color: $gray;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .findList {
+            width: 100%;
+            margin-top: 102px;
+            tr {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                td {
+                    padding: 15px;
+                    text-align: center;
+                }
+                td:first-child {
+                    min-width: 600px;
+                }
+                td:nth-child(2),
+                td:nth-child(3) {
+                    min-width: 140px;
+                }
+                td:nth-child(4) {
+                    min-width: 120px;
+                }
+            }
+        }
+    }
+}
+
 // NotFound.js
 .notFound {
     width: 100%;
