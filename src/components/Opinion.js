@@ -7,8 +7,8 @@ function Opinion(props) {
             subject: '위클리 핫',
             stockName: '삼성전자',
             name: '천진반',
-            title: '삼전 개인 주주들 필독',
-            replyCount: 15,
+            title: '2/1 마감 시황 안내★★★★★★★★',
+            replyCount: 10,
             date: '02/01',
         },
         {
