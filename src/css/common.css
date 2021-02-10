@@ -55,7 +55,7 @@ html, body {
   font-weight: bold;
 }
 
-.header .inner .logo span {
+.header .inner .logo a span {
   color: #247fe0;
 }
 
@@ -223,7 +223,7 @@ html, body {
 }
 
 .favorite .inner {
-  width: 800px;
+  width: 1000px;
   height: 100%;
   min-height: 100vh;
   margin: auto;
@@ -251,6 +251,7 @@ html, body {
   padding: 5px 0;
   text-align: left;
   position: relative;
+  cursor: pointer;
 }
 
 .favorite .inner .setting ul li span {
@@ -750,6 +751,11 @@ html, body {
   padding: 20px;
   border-left: 1px solid #efefef;
   text-align: center;
+}
+
+.footer .inner ul li a {
+  display: block;
+  width: 100%;
 }
 
 .footer .inner ul li:last-child {

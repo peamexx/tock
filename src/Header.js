@@ -5,8 +5,9 @@ function Header() {
     <div className="header">
         <div className="inner">
             <Dehaze fontSize="large" />
-            {/* nav 완성 필요 */}
-            <h1 className="logo"><span>t</span>ock.</h1>
+            <h1 className="logo">
+              <a href="/"><span>t</span>ock.</a>
+            </h1>
         </div>
     </div>
   );
