@@ -2,7 +2,7 @@ import Delay from './Delay';
 
 function FavoriteItem(props) {  
   return (
-    <tr className={ "item " + props.color + ` c${props.code}` }>
+    <tr className={ "item " + props.color + ` c${props.code}` } key={ props.id }>
       <td className="bar">
         <span className="line"></span>
         <span className="box"></span>

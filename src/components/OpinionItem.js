@@ -1,6 +1,6 @@
 function OpinionItem(props) {
     return (
-        <tr>
+        <tr key={ props.id }>
             <td className="subject">{ props.subject }</td>
             <td className="tit">
                 <a href="/opinionPost">

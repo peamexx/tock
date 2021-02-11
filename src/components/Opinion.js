@@ -1,9 +1,10 @@
 import OpinionItem from './OpinionItem';
 
-function Opinion(props) {
+function Opinion() {
 
     let opinionItem = [
         {
+            key: 'o1',
             subject: '위클리 핫',
             stockName: '삼성전자',
             name: '천진반',
@@ -12,6 +13,7 @@ function Opinion(props) {
             date: '02/01',
         },
         {
+            key: 'o2',
             subject: '위클리 핫',
             stockName: '셀트리온',
             name: '돌아에몽05',
@@ -20,6 +22,7 @@ function Opinion(props) {
             date: '02/04',
         },
         {
+            key: 'o3',
             subject: '위클리 핫',
             stockName: '에스씨엠생명과학',
             name: '떡상은나의것',
@@ -39,23 +42,29 @@ function Opinion(props) {
         <div className="opinion">
             <div className="inner">
                 <table>
-                    <tr>
-                        <th className="subject">말머리</th>
-                        <th className="tit">제목</th>
-                        <th className="name">글쓴이</th>
-                        <th className="date">날짜</th>
-                        <th className="likes">좋아요</th>
-                    </tr>
-                    { opinionItem.map((item) => 
-                        <OpinionItem 
-                        subject={ item.subject } 
-                        stockName={ item.stockName } 
-                        name={ item.name } 
-                        title={ item.title } 
-                        replyCount={ item.replyCount } 
-                        date={ item.date } 
-                        />
-                    ) }
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <th className="subject">말머리</th>
+                            <th className="tit">제목</th>
+                            <th className="name">글쓴이</th>
+                            <th className="date">날짜</th>
+                            <th className="likes">좋아요</th>
+                        </tr>
+                        { opinionItem.map((item) => 
+                            <OpinionItem 
+                            key={ item.key }
+                            id={ item.key }
+                            subject={ item.subject } 
+                            stockName={ item.stockName } 
+                            name={ item.name } 
+                            title={ item.title } 
+                            replyCount={ item.replyCount } 
+                            date={ item.date } 
+                            />
+                        ) }
+                        </tbody>
+                    <tfoot></tfoot>
                 </table>
             </div>
         </div>

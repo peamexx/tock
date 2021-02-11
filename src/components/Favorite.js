@@ -6,6 +6,7 @@ function Favorite() {
 
   let stockArr = [
     {
+      key: 's1',
       name: '삼성전자',
       code: '005930',
       delay: 0,
@@ -16,6 +17,7 @@ function Favorite() {
       color: 'pos',
     },
     {
+      key: 's2',
       name: 'NAVER',
       code: '035420',
       delay: 0,
@@ -26,6 +28,7 @@ function Favorite() {
       color: 'pos',
     },
     {
+      key: 's3',
       name: 'E-Mini 나스닥 100',
       code: '992028',
       delay: -1,
@@ -36,6 +39,7 @@ function Favorite() {
       color: 'nag',
     },
     {
+      key: 's4',
       name: '셀트리온',
       code: '068270',
       delay: 0,
@@ -46,6 +50,7 @@ function Favorite() {
       color: 'nag',
     },
     {
+      key: 's5',
       name: '니케이255',
       code: '990411',
       delay: 20,
@@ -56,6 +61,7 @@ function Favorite() {
       color: 'pos',
     },
     {
+      key: 's6',
       name: 'SK하이닉스',
       code: '000660',
       delay: 0,
@@ -66,6 +72,7 @@ function Favorite() {
       color: '',
     },
     {
+      key: 's7',
       name: '페이스북',
       code: 'FB',
       delay: 15,
@@ -76,8 +83,6 @@ function Favorite() {
       color: 'nag',
     },
   ];
-
-  let layer = document.querySelector('.layer');
 
   let [stock, setStock] = useState(stockArr);
 
@@ -96,35 +101,35 @@ function Favorite() {
   const upPrice = () => {
     let sorted = [...stock].sort((a, b) => b.price - a.price);
     setStock(sorted);
-    layer.classList.remove('on');
+    document.querySelector('.layer').classList.remove('on');
   };
 
   // 거래량
   const upVolumn = () => {
     let sorted = [...stock].sort((a, b) => b.volumn - a.volumn);
     setStock(sorted);
-    layer.classList.remove('on');
+    document.querySelector('.layer').classList.remove('on');
   };
 
   // 등락률
   const upChgr = () => {
     let sorted = [...stock].sort((a, b) => b.chgr - a.chgr);
     setStock(sorted);
-    layer.classList.remove('on');
+    document.querySelector('.layer').classList.remove('on');
   };
 
   // 등락
   const upChgp = () => {
     let sorted = [...stock].sort((a, b) => b.chgp - a.chgp);
     setStock(sorted);
-    layer.classList.remove('on');
+    document.querySelector('.layer').classList.remove('on');
   };
 
   // 이름
   const upName = () => {
     let sorted = [...stock].sort((a, b) => a.name > b.name ? 1 : -1);
     setStock(sorted);
-    layer.classList.remove('on');
+    document.querySelector('.layer').classList.remove('on');
   };
 
   return (
@@ -138,18 +143,24 @@ function Favorite() {
         </div>
         <div className="list">
           <table>
-            { stock.map((item) => 
-              <FavoriteItem 
-              name={ item.name } 
-              code={ item.code } 
-              price={ item.price.toLocaleString() } 
-              volumn={ item.volumn.toLocaleString() }
-              chgp={ item.chgp }
-              chgr={ item.chgr.toFixed(2) }
-              color={ item.color }
-              delay={ item.delay }
-              />
-            ) }
+            <thead></thead>
+            <tbody>
+              { stock.map((item) => 
+                <FavoriteItem 
+                key={ item.key }
+                id={ item.key }
+                name={ item.name } 
+                code={ item.code } 
+                price={ item.price.toLocaleString() } 
+                volumn={ item.volumn.toLocaleString() }
+                chgp={ item.chgp.toLocaleString() }
+                chgr={ item.chgr.toFixed(2) }
+                color={ item.color }
+                delay={ item.delay }
+                />
+              ) }
+            </tbody>
+            <tfoot></tfoot>
           </table>
         </div>
         <Modal />

@@ -722,10 +722,6 @@ html, body {
   word-break: break-all;
 }
 
-.opinionPost .inner .post .contents p pre {
-  white-space: pre;
-}
-
 .opinionPost .inner .post .recommend {
   text-align: center;
 }

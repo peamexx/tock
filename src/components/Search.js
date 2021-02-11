@@ -1,6 +1,6 @@
 import SearchList from './SearchList';
 import { useState } from 'react';
-import JSONDATA from '../json/aboard.json';
+import JSONDATA from '../json/data.json';
 
 function Search() {
     let [searchStock, setSearchStock] = useState('');
@@ -25,23 +25,29 @@ function Search() {
                     </div>
                 </div>
                 <table className="findList">
-                    { JSONDATA.filter((item) => {
-                        if(searchStock == '') {
-                            return item;
-                        } else if(item.name.toUpperCase().includes(searchStock.toUpperCase())) {
-                            return item;
-                        } else if(item.code.toUpperCase().includes(searchStock.toUpperCase())) {
-                            return item;
-                        } else if(item.market.toUpperCase().includes(searchStock.toUpperCase())) {
-                            return item;
-                        };
-                    }).map((item) => 
-                        <SearchList 
+                    <thead></thead>
+                    <tbody>
+                        { JSONDATA.filter((item) => {
+                            if(searchStock == '') {
+                                return item;
+                            } else if(item.name.toUpperCase().includes(searchStock.toUpperCase())) {
+                                return item;
+                            } else if(item.code.toUpperCase().includes(searchStock.toUpperCase())) {
+                                return item;
+                            } else if(item.market.toUpperCase().includes(searchStock.toUpperCase())) {
+                                return item;
+                            };
+                        }).map((item) => 
+                            <SearchList 
+                            key={ item.key }
+                            id={ item.key }
                             name={ item.name }
                             code={ item.code }
                             market={ item.market }
-                        />
-                    ) }
+                            />
+                        ) }
+                    </tbody>
+                    <tfoot></tfoot>
                 </table>
             </div>
         </div>

@@ -1,1081 +1,1297 @@
 [{
         "name": "삼성전자",
         "code": "005930",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j1"
     },
     {
         "name": "SK하이닉스",
         "code": "000660",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j2"
     },
     {
         "name": "LG화학",
         "code": "051910",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j3"
     },
     {
         "name": "삼성전자우",
         "code": "005935",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j4"
     },
     {
         "name": "NAVER",
         "code": "035420",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j5"
     },
     {
         "name": "삼성SDI",
         "code": "006400",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j6"
     },
     {
         "name": "삼성바이오로직스",
         "code": "207940",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j7"
     },
     {
         "name": "현대차",
         "code": "005380",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j8"
     },
     {
         "name": "셀트리온",
         "code": "068270",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j9"
     },
     {
         "name": "카카오",
         "code": "035720",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j10"
     },
     {
         "name": "기아차",
         "code": "000270",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j11"
     },
     {
         "name": "현대모비스",
         "code": "012330",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j12"
     },
     {
         "name": "SK이노베이션",
         "code": "096770",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j13"
     },
     {
         "name": "LG전자",
         "code": "066570",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j14"
     },
     {
         "name": "LG생활건강",
         "code": "051900",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j15"
     },
     {
         "name": "삼성물산",
         "code": "028260",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j16"
     },
     {
         "name": "POSCO",
         "code": "005490",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j17"
     },
     {
         "name": "엔씨소프트",
         "code": "036570",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j18"
     },
     {
         "name": "SK",
         "code": "034730",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j19"
     },
     {
         "name": "SK텔레콤",
         "code": "017670",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j20"
     },
     {
         "name": "LG",
         "code": "003550",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j21"
     },
     {
         "name": "KB금융",
         "code": "105560",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j22"
     },
     {
         "name": "신한지주",
         "code": "055550",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j23"
     },
     {
         "name": "한국전력",
         "code": "015760",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j24"
     },
     {
         "name": "삼성전기",
         "code": "009150",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j25"
     },
     {
         "name": "삼성에스디에스",
         "code": "018260",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j26"
     },
     {
         "name": "삼성생명",
         "code": "032830",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j27"
     },
     {
         "name": "아모레퍼시픽",
         "code": "090430",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j28"
     },
     {
         "name": "SK바이오팜",
         "code": "326030",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j29"
     },
     {
         "name": "넷마블",
         "code": "251270",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j30"
     },
     {
         "name": "포스코케미칼",
         "code": "003670",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j31"
     },
     {
         "name": "KT&G",
         "code": "033780",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j32"
     },
     {
         "name": "하나금융지주",
         "code": "086790",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j33"
     },
     {
         "name": "롯데케미칼",
         "code": "011170",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j34"
     },
     {
         "name": "한온시스템",
         "code": "018880",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j35"
     },
     {
         "name": "S-Oil",
         "code": "010950",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j36"
     },
     {
         "name": "한화솔루션",
         "code": "009830",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j37"
     },
     {
         "name": "LG디스플레이",
         "code": "034220",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j38"
     },
     {
         "name": "빅히트",
         "code": "352820",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j39"
     },
     {
         "name": "금호석유",
         "code": "011780",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j40"
     },
     {
         "name": "삼성화재",
         "code": "000810",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j41"
     },
     {
         "name": "현대글로비스",
         "code": "086280",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j42"
     },
     {
         "name": "고려아연",
         "code": "010130",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j43"
     },
     {
         "name": "한국조선해양",
         "code": "009540",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j44"
     },
     {
         "name": "우리금융지주",
         "code": "316140",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j45"
     },
     {
         "name": "CJ제일제당",
         "code": "097950",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j46"
     },
     {
         "name": "미래에셋대우",
         "code": "006800",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j47"
     },
     {
         "name": "KT",
         "code": "030200",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j48"
     },
     {
         "name": "기업은행",
         "code": "024110",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j49"
     },
     {
         "name": "한국타이어앤테크놀로지",
         "code": "161390",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j50"
     },
     {
         "name": "현대제철",
         "code": "004020",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j51"
     },
     {
         "name": "LG유플러스",
         "code": "032640",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j52"
     },
     {
         "name": "대한항공",
         "code": "003490",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j53"
     },
     {
         "name": "코웨이",
         "code": "021240",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j54"
     },
     {
         "name": "강원랜드",
         "code": "035250",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j55"
     },
     {
         "name": "아모레G",
         "code": "002790",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j56"
     },
     {
         "name": "한미사이언스",
         "code": "008930",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j57"
     },
     {
         "name": "녹십자",
         "code": "006280",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j58"
     },
     {
         "name": "LG이노텍",
         "code": "011070",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j59"
     },
     {
         "name": "SKC",
         "code": "011790",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j60"
     },
     {
         "name": "오리온",
         "code": "271560",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j61"
     },
     {
         "name": "이마트",
         "code": "139480",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j62"
     },
     {
         "name": "한국금융지주",
         "code": "071050",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j63"
     },
     {
         "name": "현대건설",
         "code": "000720",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j64"
     },
     {
         "name": "HMM",
         "code": "011200",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j65"
     },
     {
         "name": "SK케미칼",
         "code": "285130",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j66"
     },
     {
         "name": "유한양행",
         "code": "000100",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j67"
     },
     {
         "name": "두산중공업",
         "code": "034020",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j68"
     },
     {
         "name": "한미약품",
         "code": "128940",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j69"
     },
     {
         "name": "동서",
         "code": "026960",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j70"
     },
     {
         "name": "현대중공업지주",
         "code": "267250",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j71"
     },
     {
         "name": "신풍제약",
         "code": "019170",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j72"
     },
     {
         "name": "현대차2우B",
         "code": "005387",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j73"
     },
     {
         "name": "맥쿼리인프라",
         "code": "088980",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j74"
     },
     {
         "name": "삼성중공업",
         "code": "010140",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j75"
     },
     {
         "name": "한진칼",
         "code": "180640",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j76"
     },
     {
         "name": "두산퓨얼셀",
         "code": "336260",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j77"
     },
     {
         "name": "CJ대한통운",
         "code": "000120",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j78"
     },
     {
         "name": "한국항공우주",
         "code": "047810",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j79"
     },
     {
         "name": "키움증권",
         "code": "039490",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j80"
     },
     {
         "name": "삼성카드",
         "code": "029780",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j81"
     },
     {
         "name": "롯데지주",
         "code": "004990",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j82"
     },
     {
         "name": "LG화학우",
         "code": "051915",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j83"
     },
     {
         "name": "GS",
         "code": "078930",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j84"
     },
     {
         "name": "삼성증권",
         "code": "016360",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j85"
     },
     {
         "name": "일진머티리얼즈",
         "code": "020150",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j86"
     },
     {
         "name": "두산밥캣",
         "code": "241560",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j87"
     },
     {
         "name": "쌍용양회",
         "code": "003410",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j88"
     },
     {
         "name": "더존비즈온",
         "code": "012510",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j89"
     },
     {
         "name": "만도",
         "code": "204320",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j90"
     },
     {
         "name": "롯데쇼핑",
         "code": "023530",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j91"
     },
     {
         "name": "NH투자증권",
         "code": "005940",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j92"
     },
     {
         "name": "GS건설",
         "code": "006360",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j93"
     },
     {
         "name": "호텔신라",
         "code": "008770",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j94"
     },
     {
         "name": "에스원",
         "code": "012750",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j95"
     },
     {
         "name": "한국가스공사",
         "code": "036460",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j96"
     },
     {
         "name": "BGF리테일",
         "code": "282330",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j97"
     },
     {
         "name": "피비파마",
         "code": "950210",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j98"
     },
     {
         "name": "현대차우",
         "code": "005385",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j99"
     },
     {
         "name": "CJ",
         "code": "001040",
-        "market": "KOSPI"
+        "market": "KOSPI",
+        "key": "j100"
     },
     {
         "name": "셀트리온헬스케어",
         "code": "091990",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j101"
     },
     {
         "name": "셀트리온제약",
         "code": "068760",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j102"
     },
     {
         "name": "에이치엘비",
         "code": "028300",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j103"
     },
     {
         "name": "펄어비스",
         "code": "263750",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j104"
     },
     {
         "name": "씨젠",
         "code": "096530",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j105"
     },
     {
         "name": "카카오게임즈",
         "code": "293490",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j106"
     },
     {
         "name": "알테오젠",
         "code": "196170",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j107"
     },
     {
         "name": "에코프로비엠",
         "code": "247540",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j108"
     },
     {
         "name": "SK머티리얼즈",
         "code": "036490",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j109"
     },
     {
         "name": "CJ ENM",
         "code": "035760",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j110"
     },
     {
         "name": "케이엠더블유",
         "code": "032500",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j111"
     },
     {
         "name": "스튜디오드래곤",
         "code": "253450",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j112"
     },
     {
         "name": "휴젤",
         "code": "145020",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j113"
     },
     {
         "name": "리노공업",
         "code": "058470",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j114"
     },
     {
         "name": "원익IPS",
         "code": "240810",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j115"
     },
     {
         "name": "엘앤에프",
         "code": "066970",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j116"
     },
     {
         "name": "제넥신",
         "code": "095700",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j117"
     },
     {
         "name": "솔브레인",
         "code": "357780",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j118"
     },
     {
         "name": "컴투스",
         "code": "078340",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j119"
     },
     {
         "name": "티씨케이",
         "code": "064760",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j120"
     },
     {
         "name": "천보",
         "code": "278280",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j121"
     },
     {
         "name": "박셀바이오",
         "code": "323990",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j122"
     },
     {
         "name": "메드팩토",
         "code": "235980",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j123"
     },
     {
         "name": "에스티팜",
         "code": "237690",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j124"
     },
     {
         "name": "동진쎄미켐",
         "code": "005290",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j125"
     },
     {
         "name": "콜마비앤에이치",
         "code": "200130",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j126"
     },
     {
         "name": "에스에프에이",
         "code": "056190",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j127"
     },
     {
         "name": "파라다이스",
         "code": "034230",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j128"
     },
     {
         "name": "고영",
         "code": "098460",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j129"
     },
     {
         "name": "에코프로",
         "code": "086520",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j130"
     },
     {
         "name": "삼천당제약",
         "code": "000250",
-        "market": "KOSDAQ"
+        "market": "KOSDAQ",
+        "key": "j131"
     },
     {
         "name": "QV 코스피 변동성 매칭형 양매도 ETN",
         "code": "550057",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j132"
     },
     {
         "name": "삼성 코스피 양매도 5% OTM ETN",
         "code": "530060",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j133"
     },
     {
         "name": "삼성 레버리지 WTI원유 선물 ETN",
         "code": "530031",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j134"
     },
     {
         "name": "신한 레버리지 WTI원유 선물 ETN(H)",
         "code": "500019",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j135"
     },
     {
         "name": "신한 WTI원유 선물 ETN(H)",
         "code": "500015",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j136"
     },
     {
         "name": "삼성 KTOP30 ETN",
         "code": "530013",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j137"
     },
     {
         "name": "하나 코스피 변동성추세 추종 양매도 ETN",
         "code": "700001",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j138"
     },
     {
         "name": "QV 코스피 양매도 5% OTM ETN",
         "code": "550056",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j139"
     },
     {
         "name": "미래에셋 레버리지 원유선물혼합 ETN(H)",
         "code": "520009",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j140"
     },
     {
         "name": "신한 인버스 2X 천연가스 선물 ETN(H)",
         "code": "500032",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j141"
     },
     {
         "name": "신한 레버리지 은 선물 ETN(H)",
         "code": "500029",
-        "market": "ETN"
+        "market": "ETN",
+        "key": "j142"
     },
     {
         "name": "KODEX 200",
         "code": "069500",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j143"
     },
     {
         "name": "TIGER 200",
         "code": "102110",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j144"
     },
     {
         "name": "KODEX 200선물인버스2X",
         "code": "252670",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j145"
     },
     {
         "name": "KODEX 삼성그룹",
         "code": "102780",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j146"
     },
     {
         "name": "KODEX 단기채권",
         "code": "153130",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j147"
     },
     {
         "name": "KODEX 200TR",
         "code": "278530",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j148"
     },
     {
         "name": "KODEX 레버리지",
         "code": "122630",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j149"
     },
     {
         "name": "KODEX MSCI Korea TR",
         "code": "278540",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j150"
     },
     {
         "name": "TIGER MSCI Korea TR",
         "code": "310970",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j151"
     },
     {
         "name": "KODEX 종합채권(AA-이상)액티브",
         "code": "273130",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j152"
     },
     {
         "name": "KBSTAR 200",
         "code": "148020",
-        "market": "ETF"
+        "market": "ETF",
+        "key": "j153"
     },
     {
         "name": "휘발유",
         "code": "115808",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j154"
     },
     {
         "name": "고급휘발유",
         "code": "116652",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j155"
     },
     {
         "name": "경유",
         "code": "180233",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j156"
     },
     {
         "name": "두바이유",
         "code": "135370",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j157"
     },
     {
         "name": "브렌트유",
         "code": "145780",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j158"
     },
     {
         "name": "WTI(서부텍사스유)",
         "code": "158012",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j159"
     },
     {
         "name": "귀금속",
         "code": "138052",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j160"
     },
     {
         "name": "귀금속",
         "code": "139405",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j161"
     },
     {
         "name": "상품명",
         "code": "139900",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j162"
     },
     {
         "name": "국내 금",
         "code": "118056",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j163"
     },
     {
         "name": "국제 금",
         "code": "180546",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j164"
     },
     {
         "name": "백금",
         "code": "101063",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j165"
     },
     {
         "name": "은",
         "code": "109587",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j166"
     },
     {
         "name": "팔라듐",
         "code": "109889",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j167"
     },
     {
         "name": "달러/영국 파운드",
         "code": "109845",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j168"
     },
     {
         "name": "달러/유로",
         "code": "109846",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j169"
     },
     {
         "name": "달러/호주 달러",
         "code": "108486",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j170"
     },
     {
         "name": "홍콩 달러/달러",
         "code": "196540",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j171"
     },
     {
         "name": "일본 엔/달러",
         "code": "156746",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j172"
     },
     {
         "name": "캐나다 달러/달러",
         "code": "168056",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j173"
     },
     {
         "name": "아랍에미리트 디르함/달러",
         "code": "168054",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j174"
     },
     {
         "name": "네델란드 안틸레/달러",
         "code": "109805",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j175"
     },
     {
         "name": "아르헨티나 페소/달러",
         "code": "198460",
-        "market": "INDCTORS"
+        "market": "INDCTORS",
+        "key": "j176"
     },
     {
         "name": "비트코인",
         "code": "BTC",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j177"
     },
     {
         "name": "리플",
         "code": "XRP",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j178"
     },
     {
         "name": "퀀텀",
         "code": "QTUM",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j179"
     },
     {
         "name": "이더리움",
         "code": "ETH",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j180"
     },
     {
         "name": "비트코인캐시",
         "code": "BCH",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j181"
     },
     {
         "name": "트론",
         "code": "TRX",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j182"
     },
     {
         "name": "폴카닷",
         "code": "DOT",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j183"
     },
     {
         "name": "이오스",
         "code": "EOS",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j184"
     },
     {
         "name": "펀디엑스",
         "code": "NPXS",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j185"
     },
     {
         "name": "비트코인에스브이",
         "code": "BSV",
-        "market": "CRYPTO"
+        "market": "CRYPTO",
+        "key": "j186"
     },
     {
         "name": "NewLink Genetics Corporation",
         "code": "NLNK",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j187"
     },
     {
         "name": "Prudential Financial, Inc.",
         "code": "PFK",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j188"
     },
     {
         "name": "Colony NorthStar, Inc.",
         "code": "CLNS^D",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j189"
     },
     {
         "name": "Citizens First Corporation",
         "code": "CZFC",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j190"
     },
     {
         "name": "Pimco California Municipal Income Fund II",
         "code": "PCK",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j191"
     },
     {
         "name": "Tsakos Energy Navigation Ltd",
         "code": "TNP",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j192"
     },
     {
         "name": "Madison Covered Call & Equity Strategy Fund",
         "code": "MCN",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j193"
     },
     {
         "name": "B. Riley Financial, Inc.",
         "code": "RILYZ",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j194"
     },
     {
         "name": "The Advisory Board Company",
         "code": "ABCO",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j195"
     },
     {
         "name": "Vocera Communications, Inc.",
         "code": "VCRA",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j196"
     },
     {
         "name": "Nuveen AMT-Free Quality Municipal Income Fund",
         "code": "NEA",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j197"
     },
     {
         "name": "Vishay Precision Group, Inc.",
         "code": "VPG",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j198"
     },
     {
         "name": "Vaalco Energy Inc",
         "code": "EGY",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j199"
     },
     {
         "name": "First Trust Enhanced Short Maturity ETF",
         "code": "FTSM",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j200"
     },
     {
         "name": "Vista Outdoor Inc.",
         "code": "VSTO",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j201"
     },
     {
         "name": "ManTech International Corporation",
         "code": "MANT",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j202"
     },
     {
         "name": "Stamps.com Inc.",
         "code": "STMP",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j203"
     },
     {
         "name": "Cass Information Systems, Inc",
         "code": "CASS",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j204"
     },
     {
         "name": "UCP, Inc.",
         "code": "UCP",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j205"
     },
     {
         "name": "PC-Tel, Inc.",
         "code": "PCTI",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j206"
     },
     {
         "name": "Oil-Dri Corporation Of America",
         "code": "ODC",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j207"
     },
     {
         "name": "Northrop Grumman Corporation",
         "code": "NOC",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j208"
     },
     {
         "name": "Dunkin' Brands Group, Inc.",
         "code": "DNKN",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j209"
     },
     {
         "name": "MyoKardia, Inc.",
         "code": "MYOK",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j210"
     },
     {
         "name": "PowerShares LadderRite 0-5 Year Corporate Bond Portfolio",
         "code": "LDRI",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j211"
     },
     {
         "name": "Sohu.com Inc.",
         "code": "SOHU",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j212"
     },
     {
         "name": "Determine, Inc. ",
         "code": "DTRM",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j213"
     },
     {
-        "name": "Maiden Holdings, Ltd.",
+        "name": "Makeyen Holdings, Ltd.",
         "code": "MH^C",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j214"
     },
     {
         "name": "J P Morgan Chase & Co",
         "code": "JPM^B",
-        "market": "NYSE"
+        "market": "NYSE",
+        "key": "j215"
     },
     {
         "name": "First Financial Bancorp.",
         "code": "FFBC",
-        "market": "NASDAQ"
+        "market": "NASDAQ",
+        "key": "j216"
     }
 ]
