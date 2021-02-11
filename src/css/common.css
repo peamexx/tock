@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -11,6 +12,10 @@
 
 .on {
   display: block !important;
+}
+
+.tabOn {
+  border-bottom: 2px solid #0B5AB0 !important;
 }
 
 * {
@@ -72,6 +77,10 @@ html, body {
   background-color: #fff;
   text-align: left;
   overflow: hidden;
+}
+
+.home .inner .stockIndex {
+  margin-top: 30px !important;
 }
 
 .home .inner .stockIndex > div {
@@ -140,7 +149,7 @@ html, body {
   margin-right: 0;
 }
 
-.home .inner .mostpopularNews > div span {
+.home .inner .popularNews span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,23 +157,23 @@ html, body {
   margin-left: 30px;
 }
 
-.home .inner .mostpopularNews > div span .thumb {
+.home .inner .popularNews span .thumb {
   margin-right: 20px;
 }
 
-.home .inner .mostpopularNews > div span .thumb img {
+.home .inner .popularNews span .thumb img {
   width: 200px;
 }
 
-.home .inner .mostpopularNews > div span ul {
+.home .inner .popularNews span ul {
   margin-right: 20px;
 }
 
-.home .inner .mostpopularNews > div span ul li {
+.home .inner .popularNews span ul li {
   margin-bottom: 15px;
 }
 
-.home .inner .mostpopularNews > div span ul li .tit {
+.home .inner .popularNews span ul li .tit {
   width: 500px;
   display: block;
   text-overflow: ellipsis;
@@ -172,30 +181,30 @@ html, body {
   overflow: hidden;
 }
 
-.home .inner .mostpopularNews > div span ul li .tit:hover {
+.home .inner .popularNews span ul li .tit:hover {
   text-decoration: underline;
 }
 
-.home .inner .mostpopularNews > div span ul li:first-child a {
+.home .inner .popularNews span ul li:first-child a {
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.home .inner .mostpopularNews > div span ul li:last-child {
+.home .inner .popularNews span ul li:last-child {
   margin-bottom: 0;
 }
 
-.home .inner .mostpopularNews > div span .ads {
+.home .inner .popularNews span .ads {
   position: relative;
   border: 1px solid #efefef;
 }
 
-.home .inner .mostpopularNews > div span .ads img {
+.home .inner .popularNews span .ads img {
   width: 200px;
   height: 147px;
 }
 
-.home .inner .mostpopularNews > div span .ads p {
+.home .inner .popularNews span .ads p {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -205,8 +214,71 @@ html, body {
   font-size: 0.8rem;
 }
 
-.home .inner .section {
+.home .inner .popularNews span .ads:after {
+  content: "광고";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #fff;
+  font-size: 0.7rem;
+}
+
+.home .inner .populerStock .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.home .inner .populerStock .tab li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.home .inner .populerStock .tab li a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.home .inner .populerStock .list {
+  display: block;
+}
+
+.home .inner .populerStock .list tbody {
+  display: block;
+}
+
+.home .inner .populerStock .list tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+}
+
+.home .inner .populerStock .list tbody tr td {
+  width: 25%;
+  padding: 15px;
+  text-align: center;
+}
+
+.home .inner .section {
+  margin-top: 50px;
 }
 
 .home .inner .section h3 {
@@ -929,7 +1001,6 @@ html, body {
 
 .footer .inner ul li {
   width: 25%;
-  padding: 20px;
   border-left: 1px solid #efefef;
   text-align: center;
 }
@@ -937,6 +1008,7 @@ html, body {
 .footer .inner ul li a {
   display: block;
   width: 100%;
+  padding: 20px;
 }
 
 .footer .inner ul li:last-child {

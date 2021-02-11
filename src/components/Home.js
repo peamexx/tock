@@ -1,5 +1,6 @@
 import { StockIndexKospi, StockIndexKosdaq, StockIndexSp500, StockIndexNasdaq } from './StockIndex';
-import MostPopularNews from './MostPopularNews';
+import PopularNews from './PopularNews';
+import PopularStock from './PopularStock';
 
 function Home() {
   return (
@@ -17,9 +18,14 @@ function Home() {
                         <StockIndexNasdaq />
                     </div>
                 </div>
-                <div className="section mostpopularNews">
-                    <MostPopularNews />
+                <div className="section popularNews">
+                    <h3>가장 많이 본 뉴스</h3>
+                    <PopularNews />
                 </div>    
+                <div className="section populerStock">
+                    <h3>인기 종목</h3>
+                    <PopularStock />
+                </div>  
             </div>
         </div>
     </div>

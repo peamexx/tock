@@ -1,7 +1,6 @@
-function MostPopularNews() {
+function PopularNews() {
     return (
-        <div>
-            <h3>가장 많이 본 뉴스</h3>
+        <>
             <span>
                 <a href="#" className="thumb">
                     <img src="https://t1.daumcdn.net/news/202101/30/moneytoday/20210130150903307vkkg.jpg" alt="이미지1"/>
@@ -18,8 +17,8 @@ function MostPopularNews() {
                     <p>2021년 공채 정보 확인하자!</p>
                 </a>
             </span>
-        </div>
+        </>
     );
 };
 
-export default MostPopularNews;
+export default PopularNews;

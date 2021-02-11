@@ -31,6 +31,10 @@ $md: 770px;
     display: block !important;
 }
 
+.tabOn {
+    border-bottom: 2px solid $darkblue !important;
+}
+
 // Common css
 * {
     font-family: 'Noto Sans KR', sans-serif !important;
@@ -89,6 +93,7 @@ html, body {
         text-align: left;
         overflow: hidden;
         .stockIndex {
+            margin-top: 30px !important;
             > div { // .domestic .usa
                 display: flex;
                 justify-content: space-around;
@@ -143,65 +148,108 @@ html, body {
                 }
             }
         }
-        .mostpopularNews {
-            > div {
-                span {
-                    display: flex;
-                    margin-top: 30px;
-                    margin-left: 30px;
-                    .thumb {
-                        margin-right: 20px;
-                        img {
-                            width: 200px;
+        .popularNews {
+            span {
+                display: flex;
+                margin-top: 30px;
+                margin-left: 30px;
+                .thumb {
+                    margin-right: 20px;
+                    img {
+                        width: 200px;
+                    }
+                }
+                ul {
+                    margin-right: 20px;
+                    li {
+                        margin-bottom: 15px;
+                        .tit {
+                            width: 500px;
+                            display: block;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        .tit:hover { // 왜 안먹히나
+                            text-decoration: underline;
                         }
                     }
-                    ul {
-                        margin-right: 20px;
-                        li {
-                            margin-bottom: 15px;
-                            .tit {
-                                width: 500px;
-                                display: block;
-                                text-overflow: ellipsis;
-                                white-space: nowrap;
-                                overflow: hidden;
-                            }
-                            .tit:hover { // 왜 안먹히나
-                                text-decoration: underline;
-                            }
-                        }
-                        li:first-child {
-                            a {
-                                font-size: 1.3rem;
-                                font-weight: bold;
-                            }
-                        }
-                        li:last-child {
-                            margin-bottom: 0;
+                    li:first-child {
+                        a {
+                            font-size: 1.3rem;
+                            font-weight: bold;
                         }
                     }
-                    .ads {
-                        position: relative;
-                        border: 1px solid $gray;
-                        img {
-                            width: 200px;
-                            height: 147px;
-                        }
-                        p {
-                            position: absolute;
-                            bottom: 0;
-                            width: 100%;
-                            padding: 10px;
-                            background-color: $white;
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .ads {
+                    position: relative;
+                    border: 1px solid $gray;
+                    img {
+                        width: 200px;
+                        height: 147px;
+                    }
+                    p {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        padding: 10px;
+                        background-color: $white;
+                        text-align: center;
+                        font-size: 0.8rem;
+                    }
+                }
+                .ads:after {
+                    content: "광고";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    background-color: $white;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .populerStock {
+            .tab {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+                border-top: 1px solid $gray;
+                border-bottom: 1px solid $gray;
+                li {
+                    flex-grow: 1;
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+            .list {
+                display: block;
+                tbody {
+                    display: block;
+                    tr {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid $gray;
+                        td {
+                            width: 25%;
+                            padding: 15px;
                             text-align: center;
-                            font-size: 0.8rem;
                         }
                     }
                 }
             }
         }
         .section {
-            margin-top: 30px;
+            margin-top: 50px;
             h3 {
                 margin-left: 30px;
                 padding-left: 5px;
@@ -830,12 +878,12 @@ html, body {
             background-color: $white;
             li {
                 width: 25%;
-                padding: 20px;
                 border-left: 1px solid $gray;
                 text-align: center;
                 a {
                     display: block;
                     width: 100%;
+                    padding: 20px;
                 }
             }
             li:last-child {
