@@ -1,8 +1,8 @@
-import ItemSub from './ItemSub';
+import Delay from './Delay';
 
-function Item(props) {  
+function FavoriteItem(props) {  
   return (
-    <tr className={ "item " + props.upDown }>
+    <tr className={ "item " + props.color + ` c${props.code}` }>
       <td className="bar">
         <span className="line"></span>
         <span className="box"></span>
@@ -11,7 +11,7 @@ function Item(props) {
         <a href="#">
           <strong>{ props.name }</strong>
           <span className="code">{ props.code }</span>
-          <ItemSub sub={ props.sub } />
+          <Delay delay={ props.delay } />
         </a>
       </td>
       <td className="num">
@@ -26,4 +26,4 @@ function Item(props) {
   );
 }
 
-export default Item;
+export default FavoriteItem;

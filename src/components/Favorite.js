@@ -1,99 +1,130 @@
-import { Add, ImportExport, Create } from '@material-ui/icons';
+import { ImportExport, Search } from '@material-ui/icons';
 import { useState } from 'react';
-import Item from './Item';
+import FavoriteItem from './FavoriteItem';
 
 function Favorite() {
 
-  let stockItem = [
+  let stockArr = [
     {
       name: '삼성전자',
       code: '005930',
-      sub: 15,
+      delay: 0,
       price: 84600,
       volumn: 19961566,
       chgp: 200,
       chgr: 0.24,
-      upDown: 'pos',
+      color: 'pos',
     },
     {
       name: 'NAVER',
       code: '035420',
-      sub: 20,
+      delay: 0,
       price: 370500,
       volumn: 1193960,
       chgp: 8000,
       chgr: 2.21,
-      upDown: 'pos',
+      color: 'pos',
+    },
+    {
+      name: 'E-Mini 나스닥 100',
+      code: '992028',
+      delay: -1,
+      price: 13394.25,
+      volumn: 495,
+      chgp: 54.75,
+      chgr: 0.41,
+      color: 'nag',
     },
     {
       name: '셀트리온',
       code: '068270',
-      sub: 0,
+      delay: 0,
       price: 347500,
       volumn: 1886521,
       chgp: -8000,
       chgr: -2.25,
-      upDown: 'nag',
+      color: 'nag',
     },
     {
-      name: '헬릭스미스',
-      code: '084990',
-      sub: -1,
-      price: 30500,
-      volumn: 1597540,
-      chgp: -900,
-      chgr: -2.87,
-      upDown: 'nag',
+      name: '니케이255',
+      code: '990411',
+      delay: 20,
+      price: 28646.50,
+      volumn: 839840700,
+      chgp: 284.33,
+      chgr: 1.00,
+      color: 'pos',
     },
     {
       name: 'SK하이닉스',
       code: '000660',
-      sub: 0,
+      delay: 0,
       price: 130000,
       volumn: 3675298,
       chgp: 0,
       chgr: 0,
-      upDown: '',
+      color: '',
+    },
+    {
+      name: '페이스북',
+      code: 'FB',
+      delay: 15,
+      price: 266.65,
+      volumn: 14223377,
+      chgp: 0.4300,
+      chgr: 0.16,
+      color: 'nag',
     },
   ];
 
-  let [stock, setStock] = useState(stockItem);
+  let layer = document.querySelector('.layer');
 
-  const sortListOn = () => {document.querySelector('.layer').classList.add('on')};
+  let [stock, setStock] = useState(stockArr);
+
+  // Modal 오픈
+  const sortListOn = (e) => {
+    let layer = document.querySelector('.layer');
+    layer.classList.add('on');
+    layer.addEventListener('click', (e) => {
+      if(e.target === layer) {
+        layer.classList.remove('on');
+      }
+    });
+  };
 
   // 현재가
   const upPrice = () => {
     let sorted = [...stock].sort((a, b) => b.price - a.price);
     setStock(sorted);
-    document.querySelector('.layer').classList.remove('on');
+    layer.classList.remove('on');
   };
 
   // 거래량
   const upVolumn = () => {
     let sorted = [...stock].sort((a, b) => b.volumn - a.volumn);
     setStock(sorted);
-    document.querySelector('.layer').classList.remove('on');
+    layer.classList.remove('on');
   };
 
   // 등락률
   const upChgr = () => {
     let sorted = [...stock].sort((a, b) => b.chgr - a.chgr);
     setStock(sorted);
-    document.querySelector('.layer').classList.remove('on');
+    layer.classList.remove('on');
   };
 
   // 등락
   const upChgp = () => {
     let sorted = [...stock].sort((a, b) => b.chgp - a.chgp);
     setStock(sorted);
-    document.querySelector('.layer').classList.remove('on');
+    layer.classList.remove('on');
   };
 
   // 이름
   const upName = () => {
     let sorted = [...stock].sort((a, b) => a.name > b.name ? 1 : -1);
     setStock(sorted);
-    document.querySelector('.layer').classList.remove('on');
+    layer.classList.remove('on');
   };
 
   return (
@@ -101,23 +132,22 @@ function Favorite() {
       <div className="inner">
         <div className="setting">
           <ul>
-            <li><Add fontSize="large"/><span>종목추가</span></li>
+            <li><a href="/search"><Search fontSize="large"/><span>종목검색</span></a></li>
             <li onClick={ sortListOn }><ImportExport fontSize="large"/><span>정렬</span></li>
-            <li><Create fontSize="large"/><span>변경</span></li>
           </ul>
         </div>
         <div className="list">
           <table>
             { stock.map((item) => 
-              <Item 
+              <FavoriteItem 
               name={ item.name } 
               code={ item.code } 
               price={ item.price.toLocaleString() } 
               volumn={ item.volumn.toLocaleString() }
               chgp={ item.chgp }
-              chgr={ item.chgr }
-              upDown={ item.upDown }
-              sub={ item.sub }
+              chgr={ item.chgr.toFixed(2) }
+              color={ item.color }
+              delay={ item.delay }
               />
             ) }
           </table>

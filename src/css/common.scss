@@ -232,7 +232,7 @@ html, body {
             ul {
                 display: flex;
                 li {
-                    flex-grow: 0.2;
+                    flex-grow: 0.1;
                     padding: 5px 0;
                     text-align: left;
                     position: relative;
@@ -250,6 +250,9 @@ html, body {
                         left: 50px;
                     }
                 }
+                li:last-child {
+                    padding-right: 10px;
+                }
             }
         }
         .list {
@@ -266,7 +269,7 @@ html, body {
                         position: relative;
                         .line {
                             position: absolute;
-                            top: 0;
+                            top: 10px;
                             bottom: 0;
                             width: 2px;
                             height: 100%;
@@ -275,8 +278,8 @@ html, body {
                         .box {
                             position: absolute;
                             top: 5px;
-                            left: -2px;
-                            width: 6px;
+                            left: -4px;
+                            width: 10px;
                             height: 50%;
                             background-color: $darkgray;
                         }
@@ -327,6 +330,100 @@ html, body {
                         margin-right: 20px;
                     }
                 }
+                .c005930 { // 삼성전자
+                    .bar {
+                        .line {
+                            height: 50%;
+                            background-color: $nag;
+                        }
+                        .box {
+                            top: 15px;
+                            height: 8%;
+                            background-color: $nag;
+                        }
+                    }
+                }
+                .c035420 { // NAVER
+                    .bar {
+                        .line {
+                            height: 60%;
+                            background-color: $pos;
+                        }
+                        .box {
+                            top: 12px;
+                            height: 25%;
+                            background-color: $pos;
+                        }
+                    }
+                }
+                .c992028 { // E-Mini 나스닥 100
+                    .bar {
+                        .line {
+                            top: 5px;
+                            height: 80%;
+                            background-color: $nag;
+                        }
+                        .box {
+                            top: 15px;
+                            height: 50%;
+                            background-color: $nag;
+                        }
+                    }
+                }
+                .c068270 { // 셀트리온
+                    .bar {
+                        .line {
+                            top: 5px;
+                            height: 90%;
+                            background-color: $nag;
+                        }
+                        .box {
+                            top: 10px;
+                            height: 50%;
+                            background-color: $nag;
+                        }
+                    }
+                }
+                .c990411 { // 니케이255
+                    .bar {
+                        .line {
+                            height: 50%;
+                            background-color: $pos;
+                        }
+                        .box {
+                            top: 12px;
+                            height: 30%;
+                            background-color: $pos;
+                        }
+                    }
+                }
+                .c000660 { // SK하이닉스
+                    .bar {
+                        .line {
+                            height: 50%;
+                            background-color: $nag;
+                        }
+                        .box {
+                            top: 15px;
+                            height: 15%;
+                            background-color: $nag;
+                        }
+                    }
+                }
+                .cFB { // 페이스북
+                    .bar {
+                        .line {
+                            top: 0;
+                            height: 80%;
+                            background-color: $pos;
+                        }
+                        .box {
+                            top: 15px;
+                            height: 20%;
+                            background-color: $pos;
+                        }
+                    }
+                }
             }
         }
         .layer {
@@ -337,6 +434,7 @@ html, body {
             bottom: 0;
             right: 0;
             background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
             .sortList {
                 position: absolute;
                 top: 50%;
@@ -652,7 +750,7 @@ html, body {
                     display: inline-block;
                     width: 100%;
                     padding: 10px 20px;
-                    border: 0;
+                    border: 1px solid $darkgray;
                     background-color: $gray;
                     font-size: 1.1rem;
                 }

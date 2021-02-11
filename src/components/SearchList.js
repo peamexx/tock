@@ -1,6 +1,6 @@
 import { CheckBoxOutlineBlank } from '@material-ui/icons';
 
-function FindItem(props) {
+function SearchList(props) {
     return (
         <tr>
             <td>{ props.name }</td>
@@ -11,4 +11,4 @@ function FindItem(props) {
     );
 };
 
-export default FindItem;
+export default SearchList;

@@ -1,8 +1,8 @@
-import FindItem from './FindItem';
+import SearchList from './SearchList';
 import { useState } from 'react';
 import JSONDATA from '../json/aboard.json';
 
-function Find() {
+function Search() {
     let [searchStock, setSearchStock] = useState('');
 
     const searchItem = (e) => {
@@ -21,7 +21,7 @@ function Find() {
                         <li><a href="#">가상자산</a></li>
                     </ul>
                     <div className="search">
-                        <input type="text" className="searchBox" onChange={ searchItem }/>
+                        <input type="text" className="searchBox" placeholder="종목명/종목코드/심볼/시장이름" onChange={ searchItem }/>
                     </div>
                 </div>
                 <table className="findList">
@@ -36,7 +36,7 @@ function Find() {
                             return item;
                         };
                     }).map((item) => 
-                        <FindItem 
+                        <SearchList 
                             name={ item.name }
                             code={ item.code }
                             market={ item.market }
@@ -48,4 +48,4 @@ function Find() {
     );
 };
 
-export default Find;
+export default Search;
