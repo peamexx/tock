@@ -14,7 +14,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; // http
 // 읽어보기 https://yoogomja.github.io/2020/04/29/reactjs-nested-route-404/
 function App() {
   return (
-    <Router>
+    <Router basename="/tock">
     <div className="App">
       <Header />
         <Switch>
