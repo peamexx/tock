@@ -4,12 +4,12 @@ import OpinionReplys from './OpinionReplys';
 function OpinionPost() {
 
     // .head 내용 불러오기
-    let subject = localStorage.getItem('subject0');
-    let stockName = localStorage.getItem('stockName0');
-    let name = localStorage.getItem('name0');
-    let title = localStorage.getItem('title0');
-    let replyCount = Number(localStorage.getItem('replyCount0'));
-    let date = localStorage.getItem('date0');
+    let subject = localStorage.getItem('subject');
+    let stockName = localStorage.getItem('stockName');
+    let name = localStorage.getItem('name');
+    let title = localStorage.getItem('title');
+    let replyCount = Number(localStorage.getItem('replyCount'));
+    let date = localStorage.getItem('date');
 
     let [likesBtn, setLikesBtn] = useState(17);
     let [dislikesBtn, setDislikesBtn] = useState(9);
@@ -28,9 +28,10 @@ function OpinionPost() {
     const replySubmit = () => {
         let contents = document.querySelector('.reply').querySelector('.contents');
         let inputName = document.querySelector('.inputName');
+        let inputPw = document.querySelector('.inputPw');
         let textarea = document.querySelector('textarea');
 
-        if(inputName.value === '' || textarea.value === '') {
+        if(inputName.value === '' || inputPw.value === '' || textarea.value === '') {
             alert('빈칸을 입력해주세요.');
         } else {
             let li = document.createElement('li');
@@ -52,20 +53,25 @@ function OpinionPost() {
             let div = document.createElement('div');
             div.classList.add('modify');
             let input = document.createElement('input');
-            let button = document.createElement('button');
-            let button2 = document.createElement('button');
+            let button = document.createElement('button'); // 수정
+            let button2 = document.createElement('button'); // 취소
+            let input2 = document.createElement('input'); // 비밀번호
             button.textContent = '수정';
             button.onclick = modifySubmit;
             button2.textContent = '취소';
             button2.classList.add('close');
             button2.onclick = modifyOff;
+            input2.placeholder = '비밀번호';
+            input2.classList.add('writePwInput');
             div.append(input);
             div.append(button);
             div.append(button2);
+            div.append(input2);
             li.append(div);
 
             contents.append(li);
     
+            localStorage.setItem(inputName.value, inputPw.value);
             setTotalRplysCnt(totalRplysCnt + 1);
         }
     };
@@ -77,20 +83,43 @@ function OpinionPost() {
         modify.classList.toggle('on');
     };
 
-    // 댓글 수정 영역 > 취소
+    // 댓글 수정 영역 > 취소 버튼
     const modifyOff = (e) => {
         if(e.target.className == 'close') {
             e.target.parentElement.classList.remove('on');
         }
     };
 
-    // 댓글 수정 영역 > 수정
+    // 댓글 수정 영역 > 수정 버튼
     const modifySubmit = (e) => {
-        let input = e.target.previousElementSibling;
-        let p = e.target.parentElement.previousElementSibling;
-        p.textContent = input.value;
-        input.value = '';
-        e.target.parentElement.classList.remove('on');
+        let button = e.target // '수정' 버튼
+        let userName = button.parentElement.parentElement.querySelector('.name').textContent; // 닉네임
+        let userPw = localStorage.getItem(userName); // 댓글 작성시 비밀번호
+        let writePwInput = e.target.parentElement.querySelector('.writePwInput').value; // 댓글 수정시 쓴 비밀번호
+
+        let input = button.previousElementSibling; // 댓글 수정칸
+        let p = button.parentElement.previousElementSibling; // 댓글 원본
+
+        if(userPw !== writePwInput) {
+            alert('패스워드를 다시 확인해주세요');
+        } else if(input.value === '') {
+            alert('내용을 입력해주세요');
+        } else {
+            p.textContent = input.value;
+            input.value = '';
+            p.value = '';
+            e.target.parentElement.classList.remove('on');
+        }
+    };
+
+    // 안내 문구 스타일
+    const STYLE = {
+        display: 'block',
+        width: '100%',
+        padding: '10px',
+        textAlign: 'center',
+        backgroundColor: '#247fe0',
+        color: '#fff'
     };
 
     return (
@@ -113,7 +142,8 @@ function OpinionPost() {
                     </div>
                     <div className="contents">
                         <p>
-                            21/2/1 월요일 오늘의 마감시황.<br />
+                            <span style={ STYLE }><strong>안내: </strong>게시물 첫번째글인 <b>[삼성전자]2/1 마감 시황 안내★★★★★★★★★</b> 페이지로 일괄 처리됩니다</span><br />
+                            ★★/2/1 월요일 오늘의 마감시황!★★<br />
                             <br />
                             뉴욕 증시 상승세와 외국인 매수 우위 속에서 우리 증시는 하락세를 보입니다.<br />
                             <br />

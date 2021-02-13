@@ -42,7 +42,6 @@ html, body {
 .header .inner {
   width: 1200px;
   margin: auto;
-  position: relative;
 }
 
 .header .inner svg {
@@ -593,6 +592,10 @@ html, body {
   font-size: 1rem !important;
 }
 
+.opinion .inner table tr th:nth-child(5) {
+  min-width: 10%;
+}
+
 .opinion .inner table tr .subject {
   min-width: 10%;
   text-align: center;
@@ -635,18 +638,23 @@ html, body {
   font-size: 0.8rem;
 }
 
-.opinion .inner table tr .likes {
+.opinion .inner table tr .recommend {
   min-width: 10%;
   text-align: center;
   font-size: 0.8rem;
 }
 
-.opinion .inner table tr .likes span {
-  margin-right: 5px;
+.opinion .inner table tr .recommend > span svg {
+  color: #ff4444;
 }
 
-.opinion .inner table tr .likes span:last-child {
-  margin: 0;
+.opinion .inner table tr .recommend > span .btn {
+  position: relative;
+  top: -7px;
+}
+
+.opinion .inner table tr .recommend .dislikes svg {
+  color: #17a6ff;
 }
 
 .opinion .inner table tr:hover {
@@ -863,35 +871,6 @@ html, body {
   width: 1000px;
 }
 
-.find .inner .fixed .tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.find .inner .fixed .tab li {
-  width: 20%;
-  border-right: 1px solid #efefef;
-  border-bottom: 1px solid #efefef;
-  background-color: #fff;
-  text-align: center;
-}
-
-.find .inner .fixed .tab li a {
-  display: block;
-  width: 100%;
-  padding: 20px;
-}
-
-.find .inner .fixed .tab li:last-child {
-  border-right: 0;
-}
-
 .find .inner .fixed .search .searchBox {
   display: inline-block;
   width: 100%;
@@ -903,7 +882,7 @@ html, body {
 
 .find .inner .findList {
   width: 100%;
-  margin-top: 102px;
+  margin-top: 50px;
 }
 
 .find .inner .findList tr {
@@ -930,10 +909,6 @@ html, body {
 .find .inner .findList tr td:nth-child(2),
 .find .inner .findList tr td:nth-child(3) {
   min-width: 140px;
-}
-
-.find .inner .findList tr td:nth-child(4) {
-  min-width: 120px;
 }
 
 .notFound {

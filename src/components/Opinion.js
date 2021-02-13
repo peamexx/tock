@@ -1,42 +1,10 @@
 import OpinionItem from './OpinionItem';
+import OPINIONJSON from '../json/opinionData';
 
 function Opinion() {
-
-    let opinionItem = [
-        {
-            key: 'o1',
-            subject: '위클리 핫',
-            stockName: '삼성전자',
-            name: '천진반',
-            title: '2/1 마감 시황 안내★★★★★★★★',
-            replyCount: 10,
-            date: '02/01',
-        },
-        {
-            key: 'o2',
-            subject: '위클리 핫',
-            stockName: '셀트리온',
-            name: '돌아에몽05',
-            title: '다음주 코로나19 변이 관련 발표/항체치료제 국산 첫허가/임상결과 여기서 확인',
-            replyCount: 37,
-            date: '02/04',
-        },
-        {
-            key: 'o3',
-            subject: '위클리 핫',
-            stockName: '에스씨엠생명과학',
-            name: '떡상은나의것',
-            title: '기관외국인 싹쓸이중',
-            replyCount: 15,
-            date: '02/12',
-        },
-    ];
-
-    opinionItem.forEach((item, index) => {
-        for(let key in item) {
-            localStorage.setItem(key + index, item[key]);
-        }
-    });
+    for(let key in OPINIONJSON[0]) {
+        localStorage.setItem(key, OPINIONJSON[0][key]);
+    };
 
     return (
         <div className="opinion">
@@ -51,7 +19,7 @@ function Opinion() {
                             <th className="date">날짜</th>
                             <th className="likes">좋아요</th>
                         </tr>
-                        { opinionItem.map((item) => 
+                        { OPINIONJSON.map((item) => 
                             <OpinionItem 
                             key={ item.key }
                             id={ item.key }
@@ -61,6 +29,8 @@ function Opinion() {
                             title={ item.title } 
                             replyCount={ item.replyCount } 
                             date={ item.date } 
+                            likes={ item.likes } 
+                            dislikes={ item.dislikes } 
                             />
                         ) }
                         </tbody>

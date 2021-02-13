@@ -1,3 +1,6 @@
+import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
+import SentimentDissatisfiedTwoToneIcon from '@material-ui/icons/SentimentDissatisfiedTwoTone';
+
 function OpinionItem(props) {
     return (
         <tr key={ props.id }>
@@ -11,14 +14,14 @@ function OpinionItem(props) {
             </td>
             <td className="name">{ props.name }</td>
             <td className="date">{ props.date }</td>
-            <td className="likes">
-                <span className="like">
-                    <button>❤</button>
-                    <span>17</span>
+            <td className="recommend">
+                <span className="likes">
+                    <button><FavoriteTwoToneIcon fontSize="small" /></button>
+                    <span className="btn">{ props.likes }</span>
                 </span>
-                <span className="dislike">
-                    <button>💦</button>
-                    <span>9</span>
+                <span className="dislikes">
+                    <button><SentimentDissatisfiedTwoToneIcon fontSize="small" /></button>
+                    <span className="btn">{ props.dislikes }</span>
                 </span>
             </td>
         </tr>

@@ -58,7 +58,6 @@ html, body {
     .inner {
         width: 1200px;
         margin: auto;
-        position: relative;
         svg {
             position: absolute;
             top: 27%;
@@ -532,6 +531,9 @@ html, body {
                     background-color: $white;
                     font-size: 1rem !important;
                 }
+                th:nth-child(5) {
+                    min-width: 10%;
+                }
                 .subject {
                     min-width: 10%;
                     text-align: center;
@@ -569,15 +571,23 @@ html, body {
                     text-align: center;
                     font-size: 0.8rem;
                 }
-                .likes {
+                .recommend {
                     min-width: 10%;
                     text-align: center;
                     font-size: 0.8rem;
-                    span {
-                        margin-right: 5px;
+                    > span {
+                        svg {
+                            color: $pos;
+                        }
+                        .btn {
+                            position: relative;
+                            top: -7px;
+                        }
                     }
-                    span:last-child {
-                        margin: 0;
+                    .dislikes {
+                        svg {
+                            color: $nag;
+                        }
                     }
                 }
             }
@@ -770,26 +780,6 @@ html, body {
             position: fixed;
             top: 70px;
             width: 1000px;
-            .tab {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                li {
-                    width: 20%;
-                    border-right: 1px solid $gray;
-                    border-bottom: 1px solid $gray;
-                    background-color: $white;
-                    text-align: center;
-                    a {
-                        display: block;
-                        width: 100%;
-                        padding: 20px;
-                    }
-                }
-                li:last-child {
-                    border-right: 0;
-                }
-            }
             .search {
                 .searchBox {
                     display: inline-block;
@@ -803,7 +793,7 @@ html, body {
         }
         .findList {
             width: 100%;
-            margin-top: 102px;
+            margin-top: 50px;
             tr {
                 display: flex;
                 justify-content: space-between;
@@ -818,9 +808,6 @@ html, body {
                 td:nth-child(2),
                 td:nth-child(3) {
                     min-width: 140px;
-                }
-                td:nth-child(4) {
-                    min-width: 120px;
                 }
             }
         }
