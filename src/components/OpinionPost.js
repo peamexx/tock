@@ -52,10 +52,11 @@ function OpinionPost() {
             // 댓글 수정 영역
             let div = document.createElement('div');
             div.classList.add('modify');
-            let input = document.createElement('input');
+            let input = document.createElement('input'); // 내용
             let button = document.createElement('button'); // 수정
             let button2 = document.createElement('button'); // 취소
             let input2 = document.createElement('input'); // 비밀번호
+            input.placeholder = '내용';
             button.textContent = '수정';
             button.onclick = modifySubmit;
             button2.textContent = '취소';
@@ -125,6 +126,7 @@ function OpinionPost() {
     return (
         <div className="opinionPost">
             <div className="inner">
+                <h2 className="hidden">토론 게시물 내용</h2>
                 <div className="post">
                     <div className="head">
                         <div className="top">
@@ -143,7 +145,7 @@ function OpinionPost() {
                     <div className="contents">
                         <p>
                             <span style={ STYLE }><strong>안내: </strong>게시물 첫번째글인 <b>[삼성전자]2/1 마감 시황 안내★★★★★★★★★</b> 페이지로 일괄 처리됩니다</span><br />
-                            ★★/2/1 월요일 오늘의 마감시황!★★<br />
+                            /2/1 월요일 오늘의 마감시황!<br />
                             <br />
                             뉴욕 증시 상승세와 외국인 매수 우위 속에서 우리 증시는 하락세를 보입니다.<br />
                             <br />
@@ -169,18 +171,20 @@ function OpinionPost() {
                     </div>
                 </div>
                 <div className="reply">
+                    <h3 className="hidden">댓글 목록</h3>
                     <p className="tit">전체 댓글 <span className="num">[{ totalRplysCnt }]</span></p>
                     <ul className="contents">
                         <OpinionReplys />
                     </ul>
                 </div>
                 <div className="writeBox">
+                    <h3 className="hidden">댓글 달기</h3>
                     <div className="top">
                         <label>닉네임</label><input type="text" className="inputName"/>
                         <label>비밀번호</label><input type="password" className="inputPw"/>
                     </div>
                     <div className="bottom">
-                        <textarea name="" id="" className="textarea"></textarea>
+                        <textarea name="" id="" className="textarea" placeholder="내용"></textarea>
                     </div>
                     <button onClick={ replySubmit }>댓글쓰기</button>
                 </div>

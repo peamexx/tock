@@ -9,6 +9,7 @@ function Opinion() {
     return (
         <div className="opinion">
             <div className="inner">
+                <h2 className="hidden">토론 게시판</h2>
                 <table>
                     <thead></thead>
                     <tbody>

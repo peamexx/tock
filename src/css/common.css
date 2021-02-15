@@ -18,6 +18,16 @@
   border-bottom: 2px solid #0B5AB0 !important;
 }
 
+.hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
 * {
   font-family: 'Noto Sans KR', sans-serif !important;
   -webkit-box-sizing: border-box;
@@ -61,6 +71,12 @@ html, body {
 
 .header .inner .logo a span {
   color: #247fe0;
+}
+
+@media (max-width: 1200px) {
+  .header .inner {
+    width: 100%;
+  }
 }
 
 .home {
@@ -157,10 +173,15 @@ html, body {
 }
 
 .home .inner .popularNews span .thumb {
+  position: relative;
   margin-right: 20px;
 }
 
 .home .inner .popularNews span .thumb img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 200px;
 }
 
@@ -180,10 +201,6 @@ html, body {
   overflow: hidden;
 }
 
-.home .inner .popularNews span ul li .tit:hover {
-  text-decoration: underline;
-}
-
 .home .inner .popularNews span ul li:first-child a {
   font-size: 1.3rem;
   font-weight: bold;
@@ -195,12 +212,13 @@ html, body {
 
 .home .inner .popularNews span .ads {
   position: relative;
+  width: 200px;
+  height: 147px;
   border: 1px solid #efefef;
 }
 
 .home .inner .popularNews span .ads img {
-  width: 200px;
-  height: 147px;
+  width: 100%;
 }
 
 .home .inner .popularNews span .ads p {
@@ -286,6 +304,58 @@ html, body {
   border-left: 5px solid #247fe0;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .home .inner {
+    width: 100%;
+  }
+  .home .inner .stockIndex > div div canvas {
+    width: 100% !important;
+  }
+  .home .inner .popularNews > span .ads {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home .inner .popularNews > span {
+    display: block;
+  }
+  .home .inner .popularNews > span .thumb {
+    display: inline-block;
+    width: 200px;
+  }
+  .home .inner .popularNews > span .thumb img {
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    width: 100%;
+  }
+  .home .inner .popularNews > span ul {
+    display: inline-block;
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .home .inner .popularNews > span ul li .tit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .home .inner .stockIndex > div {
+    display: block;
+  }
+  .home .inner .popularNews > span .thumb {
+    display: none;
+  }
+  .home .inner .popularNews > span ul {
+    display: inline-block;
+    width: 90%;
+  }
 }
 
 .favorite {
@@ -552,6 +622,83 @@ html, body {
   background-color: #efefef;
 }
 
+@media (max-width: 1200px) {
+  .favorite .inner {
+    width: 100%;
+  }
+  .favorite .inner .setting ul li:first-child {
+    padding-left: 30px;
+  }
+  .favorite .inner .setting ul li:first-child span {
+    left: 70px;
+  }
+  .favorite .inner .setting ul li:last-child {
+    padding-right: 50px;
+  }
+  .favorite .inner .list table tbody .item .tit a strong {
+    font-size: 1.1rem;
+  }
+  .favorite .inner .list table tbody .item .tit .code {
+    display: block;
+  }
+  .favorite .inner .list table tbody .item .num .price {
+    font-size: 1.1rem;
+  }
+  .favorite .inner .list table tbody .item .num .volumn {
+    font-size: 0.9rem;
+  }
+  .favorite .inner .list table tbody .item .changeNum {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .favorite .inner {
+    width: 100%;
+  }
+  .favorite .inner .setting ul li:first-child a span {
+    left: 67px;
+  }
+  .favorite .inner .list table tbody .item .tit {
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+    width: 65%;
+  }
+  .favorite .inner .list table tbody .item .tit a strong {
+    font-size: 1rem;
+  }
+  .favorite .inner .list table tbody .item .tit a .code {
+    font-size: 0.8rem;
+  }
+  .favorite .inner .list table tbody .item .num {
+    width: 15%;
+    min-width: 0;
+  }
+  .favorite .inner .list table tbody .item .num .price {
+    font-size: 1rem;
+  }
+  .favorite .inner .list table tbody .item .changeNum {
+    width: 10%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .favorite .inner .list table tbody .item .tit {
+    width: 50%;
+  }
+  .favorite .inner .list table tbody .item .num {
+    width: 20%;
+  }
+  .favorite .inner .list table tbody .item .num .volumn {
+    font-size: 0.8rem;
+  }
+  .favorite .inner .list table tbody .item .changeNum {
+    width: 15%;
+  }
+}
+
 .opinion {
   width: 100%;
   background-color: #efefef;
@@ -582,9 +729,6 @@ html, body {
 
 .opinion .inner table tr td, .opinion .inner table tr th {
   padding: 15px 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .opinion .inner table tr th {
@@ -593,11 +737,11 @@ html, body {
 }
 
 .opinion .inner table tr th:nth-child(5) {
-  min-width: 10%;
+  width: 10%;
 }
 
 .opinion .inner table tr .subject {
-  min-width: 10%;
+  width: 10%;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -613,13 +757,8 @@ html, body {
 }
 
 .opinion .inner table tr .tit a .title {
-  display: inline-block;
-  max-width: 75%;
   margin-right: 5px;
   font-weight: bold;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .opinion .inner table tr .tit a .replyCount {
@@ -633,13 +772,13 @@ html, body {
 }
 
 .opinion .inner table tr .date {
-  min-width: 4%;
+  width: 4%;
   text-align: center;
   font-size: 0.8rem;
 }
 
 .opinion .inner table tr .recommend {
-  min-width: 10%;
+  width: 10%;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -659,6 +798,55 @@ html, body {
 
 .opinion .inner table tr:hover {
   background-color: #efefef;
+}
+
+@media (max-width: 1200px) {
+  .opinion .inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .opinion .inner {
+    width: 100%;
+  }
+  .opinion .inner table tbody tr {
+    display: block;
+  }
+  .opinion .inner table tbody tr td {
+    padding: 10px 0;
+  }
+  .opinion .inner table tbody tr .subject {
+    display: none;
+  }
+  .opinion .inner table tbody tr .tit {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .opinion .inner table tbody tr .name,
+  .opinion .inner table tbody tr .date,
+  .opinion .inner table tbody tr .recommend {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  .opinion .inner table tbody tr .name {
+    margin-left: 10px;
+  }
+  .opinion .inner table tbody tr .recommend > span {
+    margin-right: 5px;
+  }
+  .opinion .inner table tbody tr .recommend > span button {
+    position: relative;
+    top: 7px;
+  }
+  .opinion .inner table tbody tr .recommend > span .btn {
+    top: 0;
+  }
+  .opinion .inner table tbody tr:first-child {
+    display: none !important;
+  }
 }
 
 .opinionPost {
@@ -848,12 +1036,27 @@ html, body {
   color: #fff;
 }
 
-.find {
+@media (max-width: 770px) {
+  .opinionPost .inner {
+    width: 100%;
+  }
+  .opinionPost .inner .post .recommend > button {
+    width: 20%;
+  }
+  .opinionPost .inner .writeBox .top label {
+    display: block;
+  }
+  .opinionPost .inner .writeBox .top input {
+    margin: 5px 0;
+  }
+}
+
+.search {
   width: 100%;
   background-color: #efefef;
 }
 
-.find .inner {
+.search .inner {
   width: 1000px;
   height: 100%;
   min-height: 100vh;
@@ -865,13 +1068,13 @@ html, body {
   overflow: hidden;
 }
 
-.find .inner .fixed {
+.search .inner .fixed {
   position: fixed;
   top: 70px;
   width: 1000px;
 }
 
-.find .inner .fixed .search .searchBox {
+.search .inner .fixed .search .searchBox {
   display: inline-block;
   width: 100%;
   padding: 10px 20px;
@@ -880,12 +1083,12 @@ html, body {
   font-size: 1.1rem;
 }
 
-.find .inner .findList {
+.search .inner .findList {
   width: 100%;
   margin-top: 50px;
 }
 
-.find .inner .findList tr {
+.search .inner .findList tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,18 +1100,37 @@ html, body {
           align-items: center;
 }
 
-.find .inner .findList tr td {
+.search .inner .findList tr td {
   padding: 15px;
   text-align: center;
 }
 
-.find .inner .findList tr td:first-child {
+.search .inner .findList tr td:first-child {
   min-width: 600px;
 }
 
-.find .inner .findList tr td:nth-child(2),
-.find .inner .findList tr td:nth-child(3) {
+.search .inner .findList tr td:nth-child(2),
+.search .inner .findList tr td:nth-child(3) {
   min-width: 140px;
+}
+
+@media (max-width: 1200px) {
+  .search .inner {
+    width: 100%;
+  }
+  .search .inner .fixed {
+    width: 100%;
+  }
+  .search .inner .findList tbody tr td:first-child {
+    width: 40%;
+    min-width: auto;
+  }
+  .search .inner .findList tbody tr td:nth-child(2),
+  .search .inner .findList tbody tr td:nth-child(3) {
+    width: 30%;
+    min-width: auto;
+    font-size: 0.9rem;
+  }
 }
 
 .notFound {
@@ -945,6 +1167,12 @@ html, body {
   border-radius: 5px;
   background-color: #247fe0;
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .notFound .inner {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -984,5 +1212,17 @@ html, body {
 
 .footer .inner ul li:last-child {
   border-right: 1px solid #efefef;
+}
+
+@media (max-width: 1200px) {
+  .footer .inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .footer .inner li a {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=common.css.map */

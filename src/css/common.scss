@@ -35,6 +35,16 @@ $md: 770px;
     border-bottom: 2px solid $darkblue !important;
 }
 
+.hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 // Common css
 * {
     font-family: 'Noto Sans KR', sans-serif !important;
@@ -78,6 +88,14 @@ html, body {
         }
     }
 }
+
+@media (max-width: $lg) {
+    .header {
+        .inner {
+            width: 100%;
+        }
+    }
+};
 
 // Home.js
 .home {
@@ -153,8 +171,12 @@ html, body {
                 margin-top: 30px;
                 margin-left: 30px;
                 .thumb {
+                    position: relative;
                     margin-right: 20px;
                     img {
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
                         width: 200px;
                     }
                 }
@@ -169,9 +191,6 @@ html, body {
                             white-space: nowrap;
                             overflow: hidden;
                         }
-                        .tit:hover { // 왜 안먹히나
-                            text-decoration: underline;
-                        }
                     }
                     li:first-child {
                         a {
@@ -185,10 +204,11 @@ html, body {
                 }
                 .ads {
                     position: relative;
+                    width: 200px;
+                    height: 147px;
                     border: 1px solid $gray;
                     img {
-                        width: 200px;
-                        height: 147px;
+                        width: 100%;
                     }
                     p {
                         position: absolute;
@@ -259,6 +279,87 @@ html, body {
         }
     }
 }
+
+@media (max-width: $lg) {
+    .home {
+        .inner {
+            width: 100%;
+            .stockIndex {
+                > div {
+                    div {
+                        canvas {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+            .popularNews {
+                > span {
+                    .ads {
+                        display: block;
+                        margin: auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+};
+
+@media (max-width: 1000px) {
+    .home {
+        .inner {
+            .popularNews {
+                > span {
+                    display: block;
+                    .thumb {
+                        display: inline-block;
+                        width: 200px;
+                        img {
+                            top: 0;
+                            transform: none;
+                            width: 100%;
+                        }
+                    }
+                    ul {
+                        display: inline-block;
+                        width: 60%;
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                        li {
+                            .tit {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+@media (max-width: $md) {
+    .home {
+        .inner {
+            .stockIndex {
+                > div {
+                    display: block;
+                }
+            }
+            .popularNews {
+                > span {
+                    .thumb {
+                        display: none;
+                    }
+                    ul {
+                        display: inline-block;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+};
 
 // Favorite.js
 .favorite {
@@ -502,6 +603,133 @@ html, body {
     }
 }
 
+@media (max-width: $lg) {
+    .favorite {
+        .inner {
+            width: 100%;
+            .setting {
+                ul {
+                    li:first-child {
+                        padding-left: 30px;
+                        span {
+                            left: 70px;
+                        }
+                    }
+                    li:last-child {
+                        padding-right: 50px;
+                    }
+                }
+            }
+            .list {
+                table {
+                    tbody {
+                        .item {
+                            .tit {
+                                a {
+                                    strong {
+                                        font-size: 1.1rem;
+                                    }
+                                }
+                                .code {
+                                    display: block;
+                                }
+                            }
+                            .num {
+                                .price {
+                                    font-size: 1.1rem;
+                                }
+                                .volumn {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                            .changeNum {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+@media (max-width: $md) {
+    .favorite {
+        .inner {
+            width: 100%;
+            .setting {
+                ul {
+                    li:first-child {
+                        a {
+                            span {
+                                left: 67px;
+                            }
+                        }
+                    }
+                }
+            }
+            .list {
+                table {
+                    tbody {
+                        .item {
+                            .tit {
+                                flex-grow: unset;
+                                width: 65%;
+                                a {
+                                    strong {
+                                        font-size: 1rem;
+                                    }
+                                    .code {
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                            .num {
+                                width: 15%;
+                                min-width: 0;
+                                .price {
+                                    font-size: 1rem;
+                                }
+                            }
+                            .changeNum {
+                                width: 10%;
+                                min-width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+@media (max-width: 500px) {
+    .favorite {
+        .inner {
+            .list {
+                table {
+                    tbody {
+                        .item {
+                            .tit {
+                                width: 50%;
+                            }
+                            .num {
+                                width: 20%;
+                                .volumn {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                            .changeNum {
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
 // Opinion.js
 .opinion {
     width: 100%;
@@ -523,19 +751,16 @@ html, body {
                 border-bottom: 1px solid $gray;
                 td, th {
                     padding: 15px 0;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
                 }
                 th {
                     background-color: $white;
                     font-size: 1rem !important;
                 }
                 th:nth-child(5) {
-                    min-width: 10%;
+                    width: 10%;
                 }
                 .subject {
-                    min-width: 10%;
+                    width: 10%;
                     text-align: center;
                     font-size: 0.9rem;
                 }
@@ -548,13 +773,8 @@ html, body {
                             font-weight: bold;
                         }
                         .title {
-                            display: inline-block;
-                            max-width: 75%;
                             margin-right: 5px;
                             font-weight: bold;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;
                         }
                         .replyCount {
                             color: $darkblue;
@@ -567,12 +787,12 @@ html, body {
                     font-size: 0.9rem;
                 }
                 .date {
-                    min-width: 4%;
+                    width: 4%;
                     text-align: center;
                     font-size: 0.8rem;
                 }
                 .recommend {
-                    min-width: 10%;
+                    width: 10%;
                     text-align: center;
                     font-size: 0.8rem;
                     > span {
@@ -597,6 +817,65 @@ html, body {
         }
     }
 }
+
+@media (max-width: $lg) {
+    .opinion {
+        .inner {
+            width: 100%;
+        }
+    }
+};
+
+@media (max-width: $md) {
+    .opinion {
+        .inner {
+            width: 100%;
+            table {
+                tbody {
+                    tr {
+                        display: block;
+                        td {
+                            padding: 10px 0;
+                        }
+                        .subject {
+                            display: none;
+                        }
+                        .tit {
+                            display: block;
+                            width: 100%;
+                            margin-left: 10px;
+                        }
+                        .name,
+                        .date,
+                        .recommend {
+                            display: inline-block;
+                            width: auto;
+                            margin-right: 10px;
+                        }
+                        .name {
+                            margin-left: 10px;
+                        }
+                        .recommend {
+                            > span {
+                                margin-right: 5px;
+                                button {
+                                    position: relative;
+                                    top: 7px;
+                                }
+                                .btn {
+                                    top: 0;
+                                }
+                            }
+                        }
+                    }
+                    tr:first-child {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+};
 
 // OpinionPost.js
 .opinionPost {
@@ -762,8 +1041,33 @@ html, body {
     }
 }
 
-// Find.js
-.find {
+@media (max-width: $md) {
+    .opinionPost {
+        .inner {
+            width: 100%;
+            .post {
+                .recommend {
+                    > button {
+                        width: 20%;
+                    }
+                }
+            }
+            .writeBox {
+                .top {
+                    label {
+                        display: block;
+                    }
+                    input {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+};
+
+// Search.js
+.search {
     width: 100%;
     background-color: $gray;
     .inner {
@@ -814,6 +1118,33 @@ html, body {
     }
 }
 
+@media (max-width: $lg) {
+    .search {
+        .inner {
+            width: 100%;
+            .fixed {
+                width: 100%;
+            }
+            .findList {
+                tbody {
+                    tr {
+                        td:first-child {
+                            width: 40%;
+                            min-width: auto;
+                        }
+                        td:nth-child(2),
+                        td:nth-child(3) {
+                            width: 30%;
+                            min-width: auto;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
 // NotFound.js
 .notFound {
     width: 100%;
@@ -846,6 +1177,14 @@ html, body {
     }
 }
 
+@media (max-width: $lg) {
+    .notFound {
+        .inner {
+            width: 100%;
+        }
+    }
+};
+
 // Footer.js
 .footer {
     width: 100%;
@@ -876,3 +1215,23 @@ html, body {
         }
     }
 }
+
+@media (max-width: $lg) {
+    .footer {
+        .inner {
+            width: 100%;
+        }
+    }
+};
+
+@media (max-width: $md) {
+    .footer {
+        .inner {
+            li {
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+};

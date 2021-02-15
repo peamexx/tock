@@ -135,6 +135,7 @@ function Favorite() {
   return (
     <div className="favorite">
       <div className="inner">
+        <h2 className="hidden">관심목록</h2>
         <div className="setting">
           <ul>
             <li><a href="/search"><Search fontSize="large"/><span>종목검색</span></a></li>
@@ -171,6 +172,7 @@ function Favorite() {
   function Modal() {
     return (
       <div className="layer">
+        <h3 className="hidden">정렬 옵션</h3>
         <ul className="sortList">
           <li onClick={ upPrice }>현재가</li>
           <li onClick={ upVolumn }>거래량</li>

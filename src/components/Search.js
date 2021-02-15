@@ -10,8 +10,9 @@ function Search() {
     }
 
     return (
-        <div className="find">
+        <div className="search">
             <div className="inner">
+                <h2 className="hidden">종목 검색</h2>
                 <div className="fixed">
                     <div className="search">
                         <input type="text" className="searchBox" placeholder="종목명/종목코드/심볼/시장이름" onChange={ searchItem }/>
