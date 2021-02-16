@@ -144,8 +144,8 @@ function OpinionPost() {
                     </div>
                     <div className="contents">
                         <p>
-                            <span style={ STYLE }><strong>안내: </strong>게시물 첫번째글인 <b>[삼성전자]2/1 마감 시황 안내★★★★★★★★★</b> 페이지로 일괄 처리됩니다</span><br />
-                            /2/1 월요일 오늘의 마감시황!<br />
+                            <span style={ STYLE }><strong>안내: </strong>게시물 첫번째글 페이지로 일괄 처리됩니다</span><br />
+                            2/1 월요일 오늘의 마감시황!<br />
                             <br />
                             뉴욕 증시 상승세와 외국인 매수 우위 속에서 우리 증시는 하락세를 보입니다.<br />
                             <br />

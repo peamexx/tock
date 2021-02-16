@@ -58,12 +58,12 @@ html, body {
 
 // Header.js
 .header {
-    width: 100%;
-    height: 70px;
-    border-bottom: 1px solid $gray;
-    background-color: $white;
     position: fixed;
     top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     z-index: 999;
     .inner {
         width: 1200px;
@@ -120,10 +120,9 @@ html, body {
                     padding: 20px;
                     h4 {
                         margin-bottom: 10px;
-                        a {
-                            font-size: 1.3rem;
-                            font-weight: bold;
-                        }
+                        font-size: 1.3rem;
+                        font-weight: bold;
+
                     }
                     .num {
                         .price {
@@ -212,7 +211,7 @@ html, body {
                     }
                     p {
                         position: absolute;
-                        bottom: 0;
+                        bottom: -0.5px;
                         width: 100%;
                         padding: 10px;
                         background-color: $white;
@@ -325,7 +324,7 @@ html, body {
                         display: inline-block;
                         width: 60%;
                         margin-right: 0;
-                        margin-bottom: 20px;
+                        margin-bottom: 40px;
                         li {
                             .tit {
                                 width: 100%;
@@ -344,16 +343,35 @@ html, body {
             .stockIndex {
                 > div {
                     display: block;
+                    > div {
+                        padding: 10px 30px;
+                        h4 {
+                            font-size: 1.1rem;
+                        }
+                        .num {
+                            .price {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
                 }
             }
             .popularNews {
                 > span {
+                    margin-left: 0;
                     .thumb {
                         display: none;
                     }
                     ul {
-                        display: inline-block;
+                        display: block;
                         width: 90%;
+                        margin: auto;
+                        margin-bottom: 30px;
+                        li:first-child {
+                            .tit {
+                                font-size: 1.1rem;
+                            }
+                        }
                     }
                 }
             }
@@ -378,28 +396,40 @@ html, body {
             border-bottom: 3px solid $gray;
             overflow: hidden;
             ul {
-                display: flex;
                 li {
-                    flex-grow: 0.1;
+                    float: left;
+                    width: 50%;
+                    height: 46px;
                     padding: 5px 0;
-                    text-align: left;
                     position: relative;
                     cursor: pointer;
+                    svg {
+                        position: absolute;
+                        top: 7px;
+                    }
                     span {
                         position: absolute;
-                        top: 14px;
-                        left: 40px;
+                        top: 16px;
                     }
                 }
                 li:first-child {
-                    flex-grow: 2;
                     padding-left: 10px;
+                    svg {
+                        left: 18px;
+                    }
                     span {
-                        left: 50px;
+                        left: 55px;
                     }
                 }
                 li:last-child {
-                    padding-right: 10px;
+                    float: right;
+                    svg {
+                        right: 60px;
+                    }
+                    span {
+                        right: 30px;
+                        left: none;
+                    }
                 }
             }
         }
@@ -610,13 +640,10 @@ html, body {
             .setting {
                 ul {
                     li:first-child {
-                        padding-left: 30px;
-                        span {
-                            left: 70px;
-                        }
+                        padding-left: 2%;
                     }
                     li:last-child {
-                        padding-right: 50px;
+                        padding-right: 2%;
                     }
                 }
             }
@@ -659,11 +686,9 @@ html, body {
             width: 100%;
             .setting {
                 ul {
-                    li:first-child {
-                        a {
-                            span {
-                                left: 67px;
-                            }
+                    li {
+                        span {
+                            font-size: 0.9rem;
                         }
                     }
                 }
@@ -834,6 +859,7 @@ html, body {
                 tbody {
                     tr {
                         display: block;
+                        padding: 10px 15px;
                         td {
                             padding: 10px 0;
                         }
@@ -870,6 +896,9 @@ html, body {
                     }
                     tr:first-child {
                         display: none !important;
+                    }
+                    tr:nth-child(2) {
+                        padding-top: 20px;
                     }
                 }
             }
@@ -1046,6 +1075,15 @@ html, body {
         .inner {
             width: 100%;
             .post {
+                .head {
+                    .top {
+                        .tit {
+                            .stockName {
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
                 .recommend {
                     > button {
                         width: 20%;
@@ -1089,8 +1127,8 @@ html, body {
                     display: inline-block;
                     width: 100%;
                     padding: 10px 20px;
-                    border: 1px solid $darkgray;
-                    background-color: $gray;
+                    border: 0;
+                    border-bottom: 2px solid $blue;
                     font-size: 1.1rem;
                 }
             }
@@ -1190,7 +1228,8 @@ html, body {
     width: 100%;
     position: fixed;
     bottom: 0;
-    border-top: 1px solid $gray;
+    // border-top: 1px solid $gray;
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.19);
     background-color: $white;
     .inner {
         width: 1200px;
@@ -1227,9 +1266,12 @@ html, body {
 @media (max-width: $md) {
     .footer {
         .inner {
-            li {
-                a {
-                    font-size: 0.9rem;
+            ul {
+                li {
+                    a {
+                        padding: 20px 10px;
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }

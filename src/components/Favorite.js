@@ -1,6 +1,7 @@
 import { ImportExport, Search } from '@material-ui/icons';
 import { useState } from 'react';
 import FavoriteItem from './FavoriteItem';
+import { Link } from 'react-router-dom';
 
 function Favorite() {
 
@@ -138,7 +139,7 @@ function Favorite() {
         <h2 className="hidden">관심목록</h2>
         <div className="setting">
           <ul>
-            <li><a href="/search"><Search fontSize="large"/><span>종목검색</span></a></li>
+            <li><Link to="/search"><Search fontSize="large"/><span>종목검색</span></Link></li>
             <li onClick={ sortListOn }><ImportExport fontSize="large"/><span>정렬</span></li>
           </ul>
         </div>

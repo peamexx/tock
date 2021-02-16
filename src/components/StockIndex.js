@@ -3,7 +3,7 @@ import { Line } from 'react-chartjs-2';
 function StockIndexKospi() {
     return (
         <div className="kospi">
-            <h4><a href="#">코스피지수</a></h4>
+            <h4>코스피지수</h4>
             <span className="num">
                 <strong className="price pos">2,820.51</strong>
                 <p className="changePrice pos">11.91</p>
