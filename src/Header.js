@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
     <div className="header">
         <div className="inner">
             <h1 className="logo">
-              <a href="/"><span>t</span>ock.</a>
+              <Link to="/"><span>t</span>ock.</Link>
             </h1>
         </div>
     </div>

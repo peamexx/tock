@@ -9,9 +9,8 @@ import Opinion from './components/Opinion';
 import NotFound from './components/NotFound';
 import OpinionPost from './components/OpinionPost';
 import Search from './components/Search';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; // https://reactrouter.com/web/example/no-match
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-// 읽어보기 https://yoogomja.github.io/2020/04/29/reactjs-nested-route-404/
 function App() {
   return (
       // basename="/tock"

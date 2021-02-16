@@ -1,13 +1,15 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <div className="footer">
         <div className="inner">
           <h2 className="hidden">주요 서비스</h2>
           <ul>
-              <li><a href="/">홈</a></li>
-              <li><a href="/favorite">관심목록</a></li>
-              <li><a href="/search">종목검색</a></li>
-              <li><a href="/opinion">토론</a></li>
+              <li><Link to="/">홈</Link></li>
+              <li><Link to="/favorite">관심목록</Link></li>
+              <li><Link to="/search">종목검색</Link></li>
+              <li><Link to="/opinion">토론</Link></li>
           </ul>
         </div>
     </div>
