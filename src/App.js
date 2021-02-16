@@ -15,7 +15,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; // http
 function App() {
   return (
       // basename="/tock"
-      <Router> 
+      <Router basename="/tock"> 
         <div className="App">
           <Header />
             <Switch>
