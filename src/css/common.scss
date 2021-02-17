@@ -54,6 +54,7 @@ $md: 770px;
 html, body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 // Header.js
@@ -211,9 +212,10 @@ html, body {
                     }
                     p {
                         position: absolute;
-                        bottom: -0.5px;
+                        bottom: -1px;
                         width: 100%;
                         padding: 10px;
+                        border-bottom: 1px solid $gray;
                         background-color: $white;
                         text-align: center;
                         font-size: 0.8rem;
@@ -859,7 +861,7 @@ html, body {
                 tbody {
                     tr {
                         display: block;
-                        padding: 10px 15px;
+                        padding: 10px 10px;
                         td {
                             padding: 10px 0;
                         }
@@ -971,11 +973,12 @@ html, body {
                     padding: 15px;
                     border-radius: 5px;
                     text-align: center;
-                    color: $white;
+                    color: $white !important;
                     background-color: $nag;
                     span {
                         display: block;
                         margin-top: 5px;
+                        color: $white !important;
                     }
                 }
                 .likes {
@@ -1031,7 +1034,7 @@ html, body {
                         margin-right: 10px;
                         padding: 10px;
                         background-color: $nag;
-                        color: $white;
+                        color: $white !important;
                     }
                     button:last-child {
                         background-color: $pos;
@@ -1064,7 +1067,7 @@ html, body {
                 padding: 15px;
                 margin: auto;
                 background-color: $darkblue;
-                color: $white;
+                color: $white !important;
             }
         }
     }
@@ -1075,6 +1078,7 @@ html, body {
         .inner {
             width: 100%;
             .post {
+                padding: 30px 10px;
                 .head {
                     .top {
                         .tit {
@@ -1089,6 +1093,9 @@ html, body {
                         width: 20%;
                     }
                 }
+            }
+            .reply {
+                padding: 30px 15px;
             }
             .writeBox {
                 .top {

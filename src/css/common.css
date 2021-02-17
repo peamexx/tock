@@ -37,6 +37,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -221,9 +222,10 @@ html, body {
 
 .home .inner .popularNews span .ads p {
   position: absolute;
-  bottom: -0.5px;
+  bottom: -1px;
   width: 100%;
   padding: 10px;
+  border-bottom: 1px solid #efefef;
   background-color: #fff;
   text-align: center;
   font-size: 0.8rem;
@@ -831,7 +833,7 @@ html, body {
   }
   .opinion .inner table tbody tr {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 10px;
   }
   .opinion .inner table tbody tr td {
     padding: 10px 0;
@@ -950,13 +952,14 @@ html, body {
   padding: 15px;
   border-radius: 5px;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
   background-color: #17a6ff;
 }
 
 .opinionPost .inner .post .recommend button span {
   display: block;
   margin-top: 5px;
+  color: #fff !important;
 }
 
 .opinionPost .inner .post .recommend .likes {
@@ -1024,7 +1027,7 @@ html, body {
   margin-right: 10px;
   padding: 10px;
   background-color: #17a6ff;
-  color: #fff;
+  color: #fff !important;
 }
 
 .opinionPost .inner .reply .contents .modify button:last-child {
@@ -1056,18 +1059,24 @@ html, body {
   padding: 15px;
   margin: auto;
   background-color: #0B5AB0;
-  color: #fff;
+  color: #fff !important;
 }
 
 @media (max-width: 770px) {
   .opinionPost .inner {
     width: 100%;
   }
+  .opinionPost .inner .post {
+    padding: 30px 10px;
+  }
   .opinionPost .inner .post .head .top .tit .stockName {
     line-height: 1.5;
   }
   .opinionPost .inner .post .recommend > button {
     width: 20%;
+  }
+  .opinionPost .inner .reply {
+    padding: 30px 15px;
   }
   .opinionPost .inner .writeBox .top label {
     display: block;
