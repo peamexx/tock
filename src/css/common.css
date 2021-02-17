@@ -40,6 +40,17 @@ html, body {
   overflow-x: hidden;
 }
 
+input,
+textarea,
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -843,7 +854,7 @@ html, body {
   }
   .opinion .inner table tbody tr .tit {
     display: block;
-    width: 100%;
+    width: calc(100% - 20px);
     margin-left: 10px;
   }
   .opinion .inner table tbody tr .name,
@@ -1067,7 +1078,7 @@ html, body {
     width: 100%;
   }
   .opinionPost .inner .post {
-    padding: 30px 10px;
+    padding: 30px 15px;
   }
   .opinionPost .inner .post .head .top .tit .stockName {
     line-height: 1.5;
