@@ -63,9 +63,12 @@ button {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    color: inherit;
+    -moz-color: inherit;
+    -webkit-color: inherit;
     border-radius: 0;
-    -webkit-border-radius: 0;
     -moz-border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 // Header.js
@@ -90,7 +93,7 @@ button {
             margin: auto;
             line-height: 70px;
             text-align: center;
-            font-family: 'Fira Mono', monospace;
+            font-family: 'Fira Mono', monospace !important;
             font-size: 2rem;
             font-weight: bold;
             a {
