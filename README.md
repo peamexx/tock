@@ -4,12 +4,13 @@ React.js를 활용한 주식 시세 사이트.
 
 [미리보기](https://peamexx.github.io/tock/)
 
-![개인 블로그](https://img.shields.io/badge/blog-개인블로그Click-blueviolet?link=http://peamexx.tistory.com)
-![이메일](https://img.shields.io/badge/email-peamexx@daum.net-pink)
+*블로그 [peamexx@tistory.com](http://peamexx.tistory.com)*
+
+*이메일 peamexx@daum.net*
 
 ___
 
-### 특징
+### 특징 🧚🏻‍♀️
 - 반응형
 - 웹 접근성 고려
 ___
@@ -27,7 +28,7 @@ ___
 
 ___
 
-### 페이지 별 사용 기능 🎅🏻
+### 페이지 별 사용 기능 🔥
 | 메뉴  | 사용 기능 |
 | ------------- |:-------------:|
 | 홈      | 1. 인기 종목 (useState)     |
@@ -37,7 +38,7 @@ ___
 
 ___
 
-### 추가하고 싶은 기능
+### 추가하고 싶은 기능 👀
 - [X] Javascript DOM 사용
 - [X] localStorage, json 사용
 - [ ] 페이지 이동 시 스크롤 리셋
