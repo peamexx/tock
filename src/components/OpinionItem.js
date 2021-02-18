@@ -17,11 +17,11 @@ function OpinionItem(props) {
             <td className="date">{ props.date }</td>
             <td className="recommend">
                 <span className="likes">
-                    <button><FavoriteTwoToneIcon fontSize="small" /></button>
+                    <button type="button" aria-label="공감 개수"><FavoriteTwoToneIcon fontSize="small" /></button>
                     <span className="btn">{ props.likes }</span>
                 </span>
                 <span className="dislikes">
-                    <button><SentimentDissatisfiedTwoToneIcon fontSize="small" /></button>
+                    <button type="button" aria-label="비공감 개수"><SentimentDissatisfiedTwoToneIcon fontSize="small" /></button>
                     <span className="btn">{ props.dislikes }</span>
                 </span>
             </td>
