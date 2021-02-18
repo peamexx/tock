@@ -1161,8 +1161,7 @@ button {
   min-width: 600px;
 }
 
-.search .inner .findList tr td:nth-child(2),
-.search .inner .findList tr td:nth-child(3) {
+.search .inner .findList tr td:nth-child(2), .search .inner .findList tr td:nth-child(3) {
   min-width: 140px;
 }
 
@@ -1177,8 +1176,7 @@ button {
     width: 40%;
     min-width: auto;
   }
-  .search .inner .findList tbody tr td:nth-child(2),
-  .search .inner .findList tbody tr td:nth-child(3) {
+  .search .inner .findList tbody tr td:nth-child(2), .search .inner .findList tbody tr td:nth-child(3) {
     width: 30%;
     min-width: auto;
     font-size: 0.9rem;

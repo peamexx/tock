@@ -138,8 +138,10 @@ button {
                     }
                     .num {
                         .price {
-                            font-size: 1.6rem;
-                            font-weight: bold;
+                            font: {
+                                size: 1.6rem;
+                                weight: bold;
+                            }
                         }
                         p {
                             display: inline;
@@ -165,14 +167,14 @@ button {
                             margin-right: 5px;
                             padding-right: 5px;
                             border-right: 1px solid $gray;
-                        }
-                        dd:last-child {
-                            border: 0;
+                            &:last-child {
+                                border: 0;
+                            }
                         }
                     }
-                }
-                > div:last-child {
-                    margin-right: 0;
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
@@ -202,15 +204,17 @@ button {
                             white-space: nowrap;
                             overflow: hidden;
                         }
-                    }
-                    li:first-child {
-                        a {
-                            font-size: 1.3rem;
-                            font-weight: bold;
+                        &:first-child {
+                            a {
+                                font: {
+                                    size: 1.3rem;
+                                    weight: bold;
+                                }
+                            }
                         }
-                    }
-                    li:last-child {
-                        margin-bottom: 0;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
                 .ads {
@@ -231,16 +235,16 @@ button {
                         text-align: center;
                         font-size: 0.8rem;
                     }
-                }
-                .ads:after {
-                    content: "광고";
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: 5px;
-                    background-color: $white;
-                    font-size: 0.7rem;
+                    &:after {
+                        content: "광고";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 5px;
+                        background-color: $white;
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
@@ -336,8 +340,10 @@ button {
                     ul {
                         display: inline-block;
                         width: 60%;
-                        margin-right: 0;
-                        margin-bottom: 40px;
+                        margin: {
+                            right: 0;
+                            bottom: 40px;
+                        }
                         li {
                             .tit {
                                 width: 100%;
@@ -424,24 +430,24 @@ button {
                         position: absolute;
                         top: 16px;
                     }
-                }
-                li:first-child {
-                    padding-left: 10px;
-                    svg {
-                        left: 18px;
+                    &:first-child {
+                        padding-left: 10px;
+                        svg {
+                            left: 18px;
+                        }
+                        span {
+                            left: 55px;
+                        }
                     }
-                    span {
-                        left: 55px;
-                    }
-                }
-                li:last-child {
-                    float: right;
-                    svg {
-                        right: 60px;
-                    }
-                    span {
-                        right: 30px;
-                        left: none;
+                    &:last-child {
+                        float: right;
+                        svg {
+                            right: 60px;
+                        }
+                        span {
+                            right: 30px;
+                            left: none;
+                        }
                     }
                 }
             }
@@ -502,8 +508,10 @@ button {
                         min-width: 12%;
                         .price {
                             margin-bottom: 5px;
-                            font-size: 1.3rem;
-                            font-weight: bold;
+                            font: {
+                                size: 1.3rem;
+                                weight: bold;
+                            }
                         }
                         .volumn {
                             color: $darkgray !important;
@@ -637,9 +645,9 @@ button {
                     padding: 10px;
                     text-align: center;
                     border-bottom: 1px solid $gray;
-                }
-                li:hover {
-                    background-color: $gray;
+                    &:hover {
+                        background-color: $gray;
+                    }
                 }
             }
         }
@@ -652,11 +660,13 @@ button {
             width: 100%;
             .setting {
                 ul {
-                    li:first-child {
-                        padding-left: 2%;
-                    }
-                    li:last-child {
-                        padding-right: 2%;
+                    li {
+                        &:first-child {
+                            padding-left: 2%;
+                        }
+                        &:last-child {
+                            padding-right: 2%;
+                        }
                     }
                 }
             }
@@ -793,9 +803,9 @@ button {
                 th {
                     background-color: $white;
                     font-size: 1rem !important;
-                }
-                th:nth-child(5) {
-                    width: 10%;
+                    &:nth-child(5) {
+                        width: 10%;
+                    }
                 }
                 .subject {
                     width: 10%;
@@ -848,9 +858,9 @@ button {
                         }
                     }
                 }
-            }
-            tr:hover {
-                background-color: $gray;
+                &:hover {
+                    background-color: $gray;
+                }
             }
         }
     }
@@ -906,12 +916,12 @@ button {
                                 }
                             }
                         }
-                    }
-                    tr:first-child {
-                        display: none !important;
-                    }
-                    tr:nth-child(2) {
-                        padding-top: 20px;
+                        &:first-child {
+                            display: none !important;
+                        }
+                        &:nth-child(2) {
+                            padding-top: 20px;
+                        }
                     }
                 }
             }
@@ -1165,13 +1175,13 @@ button {
                 td {
                     padding: 15px;
                     text-align: center;
-                }
-                td:first-child {
-                    min-width: 600px;
-                }
-                td:nth-child(2),
-                td:nth-child(3) {
-                    min-width: 140px;
+                    &:first-child {
+                        min-width: 600px;
+                    }
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        min-width: 140px;
+                    }
                 }
             }
         }
@@ -1188,15 +1198,17 @@ button {
             .findList {
                 tbody {
                     tr {
-                        td:first-child {
-                            width: 40%;
-                            min-width: auto;
-                        }
-                        td:nth-child(2),
-                        td:nth-child(3) {
-                            width: 30%;
-                            min-width: auto;
-                            font-size: 0.9rem;
+                        td {
+                            &:first-child {
+                                width: 40%;
+                                min-width: auto;
+                            }
+                            &:nth-child(2),
+                            &:nth-child(3) {
+                                width: 30%;
+                                min-width: auto;
+                                font-size: 0.9rem;
+                            }
                         }
                     }
                 }
@@ -1267,7 +1279,6 @@ button {
     width: 100%;
     position: fixed;
     bottom: 0;
-    // border-top: 1px solid $gray;
     box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.19);
     background-color: $white;
     .inner {
@@ -1286,9 +1297,9 @@ button {
                     width: 100%;
                     padding: 20px;
                 }
-            }
-            li:last-child {
-                border-right: 1px solid $gray;
+                &:last-child {
+                    border-right: 1px solid $gray;
+                }
             }
         }
     }

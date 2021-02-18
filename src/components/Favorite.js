@@ -9,8 +9,6 @@ function Favorite() {
     document.title = '관심목록 - 주가 확인'
   });
 
-  window.scrollTo(0, 0);
-
   let stockArr = [
     {
       key: 's1',
