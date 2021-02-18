@@ -1,17 +1,26 @@
-___
+![This is a alt text.](http://peamexx.com/img/titleImg.jpg)
 
 React.js를 활용한 주식 시세 사이트.
 
 [미리보기](https://peamexx.github.io/tock/)
 
+*블로그 [peamexx@tistory.com](http://peamexx.tistory.com)*
+
+*이메일 peamexx@daum.net*
+
 ___
 
-### 사용 기술
+### 특징 🧚🏻‍♀️
+- 반응형
+- 웹 접근성 고려
+___
+
+### 사용 기술 🤸🤸‍♂️
 - Javascript
-- SASS
+- HTML / SCSS
 ___
 
-### 메뉴
+### 메뉴 👩🏻‍💻
 1. 홈
 2. 관심목록
 3. 종목검색
@@ -19,56 +28,19 @@ ___
 
 ___
 
-### 1. 홈
-- 차트 (주요 국내/해외 지수)
-
-**export { 여러개 } 사용**
-
-StockIndex.js 파일에서 여러 컴포넌트를 export하여 호출.
-
-- 탭 (인기 종목)
-
-**useState 사용**
-
-데이터 및 탭 CSS 동시에 변경.
+### 페이지 별 사용 기능 🔥
+| 메뉴  | 사용 기능 |
+| ------------- |:-------------:|
+| 홈      | 1. 인기 종목 (useState)     |
+| 관심목록      | 1. 종목 데이터 (props)<br /> 2. 정렬 옵션(useState)     |
+| 종목검색      | 1. 종목 데이터 (json)<br /> 2. 검색(useState)     |
+| 토론      | 1. 공감/비공감 버튼, 전체 댓글 개수 (useState)<br /> 2. 댓글 수정(Javascript DOM) |
 
 ___
 
-### 2. 관심목록
-- 종목 데이터
-
-**props 사용**
-
-하위 컴포넌트에 데이터 노출.
-
-- 정렬
-
-**useState 사용**
-
-선택 옵션에 맞는 데이터 순서 노출.
-
-___
-
-### 3. 종목검색
-- 종목 데이터
-
-**json 사용**
-
-json 파일로 데이터 노출.
-
-- 검색
-
-**useState, filter() 사용**
-
-자음 하나마다 filter 적용하여 검색.
-
-___
-
-### 4. 토론
-- 공감/비공감 버튼, 전체 댓글 개수
-
-**useState 사용**
-
-- 댓글 수정
-
-**Javascript DOM 활용**
+### 추가하고 싶은 기능 👀
+- [X] Javascript DOM 사용
+- [X] localStorage, json 사용
+- [ ] 페이지 이동 시 스크롤 리셋
+- [X] 종목검색 - 검색 시 자음마다 종목 찾기
+- [X] 접근성 권고 사항
