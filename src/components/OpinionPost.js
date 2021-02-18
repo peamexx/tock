@@ -56,6 +56,7 @@ function OpinionPost() {
             let button2 = document.createElement('button'); // 취소
             let input2 = document.createElement('input'); // 비밀번호
             input.placeholder = '내용';
+            input.classList.add('writeTextInput');
             button.textContent = '수정';
             button.onclick = modifySubmit;
             button2.textContent = '취소';
@@ -97,7 +98,7 @@ function OpinionPost() {
         let userPw = localStorage.getItem(userName); // 댓글 작성시 비밀번호
         let writePwInput = e.target.parentElement.querySelector('.writePwInput').value; // 댓글 수정시 쓴 비밀번호
 
-        let input = button.previousElementSibling; // 댓글 수정칸
+        let input = button.parentElement.querySelector('.writeTextInput'); // 댓글 수정칸
         let p = button.parentElement.previousElementSibling; // 댓글 원본
 
         if(userPw !== writePwInput) {
