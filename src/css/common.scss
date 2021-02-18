@@ -1,18 +1,17 @@
 // Import
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); // 'Noto Sans KR', sans-serif !important;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); // 'Noto Sans KR', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); // 'Fira Mono', monospace;
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 // Color variable
-$white: #fff;
-$blue: #247fe0;
-$darkblue: #0B5AB0;
-$green: #24e079;
-$gray: #efefef;
-$darkgray: #666;
-$black: #333;
-$pos: #ff4444;
-$nag: #17a6ff;
+$white: rgb(255, 255, 255);
+$blue: rgb(36, 127, 224);
+$darkblue: rgb(11, 90, 176);
+$gray: rgb(239, 239, 239);
+$darkgray: rgb(102, 102, 102);
+$black: rgb(51, 51, 51);
+$pos: rgb(255, 68, 68);
+$nag: rgb(23, 166, 255);
 
 // Breakpoint variable
 $lg: 1200px;
@@ -63,9 +62,6 @@ button {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    color: inherit;
-    -moz-color: inherit;
-    -webkit-color: inherit;
     border-radius: 0;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -1025,7 +1021,7 @@ button {
                         display: inline-block;
                         padding: 2px;
                         border-radius: 2px;
-                        background-color: $darkgray;
+                        background-color: $darkblue;
                         color: $white;
                         font-size: 0.9em;
                         cursor: pointer;
@@ -1051,8 +1047,12 @@ button {
                         background-color: $nag;
                         color: $white !important;
                     }
-                    button:last-child {
-                        background-color: $pos;
+                    .writePwInput {
+                        width: 30%;
+                        margin-top: 10px;
+                    }
+                    .close {
+                        background-color: $darkgray;
                     }
                 }
             }
@@ -1241,6 +1241,23 @@ button {
     .notFound {
         .inner {
             width: 100%;
+        }
+    }
+};
+
+@media (max-width: $md) {
+    .notFound {
+        .inner {
+            span {
+                p {
+                    line-height: 1.5;
+                    word-break: keep-all;
+                    font-size: 1.3rem;
+                }
+                button {
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 };

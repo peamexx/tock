@@ -1,9 +1,15 @@
 import { ImportExport, Search } from '@material-ui/icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import FavoriteItem from './FavoriteItem';
 import { Link } from 'react-router-dom';
 
 function Favorite() {
+
+  useEffect(() => {
+    document.title = '관심목록 - 주가 확인'
+  });
+
+  window.scrollTo(0, 0);
 
   let stockArr = [
     {
@@ -172,7 +178,7 @@ function Favorite() {
 
   function Modal() {
     return (
-      <div className="layer">
+      <div className="layer" id="modal" role="dialog" aria-labelledby="modal" aria-modal="true">
         <h3 className="hidden">정렬 옵션</h3>
         <ul className="sortList">
           <li onClick={ upPrice }>현재가</li>

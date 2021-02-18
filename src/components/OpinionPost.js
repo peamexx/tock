@@ -2,7 +2,6 @@ import { useState } from 'react';
 import OpinionReplys from './OpinionReplys';
 
 function OpinionPost() {
-
     // .head 내용 불러오기
     let subject = localStorage.getItem('subject');
     let stockName = localStorage.getItem('stockName');
@@ -65,9 +64,9 @@ function OpinionPost() {
             input2.placeholder = '비밀번호';
             input2.classList.add('writePwInput');
             div.append(input);
+            div.append(input2);
             div.append(button);
             div.append(button2);
-            div.append(input2);
             li.append(div);
 
             contents.append(li);
@@ -166,8 +165,8 @@ function OpinionPost() {
                         </p>
                     </div>
                     <div className="recommend">
-                        <button className="likes" onClick={ incrementCount }>공감 <span className="num">{ likesBtn }</span></button>
-                        <button className="dislikes" onClick={ incrementCount }>비공감 <span className="num">{ dislikesBtn }</span></button>
+                        <button className="likes" onClick={ incrementCount } type="button">공감 <span className="num">{ likesBtn }</span></button>
+                        <button className="dislikes" onClick={ incrementCount } type="button">비공감 <span className="num">{ dislikesBtn }</span></button>
                     </div>
                 </div>
                 <div className="reply">
@@ -180,8 +179,8 @@ function OpinionPost() {
                 <div className="writeBox">
                     <h3 className="hidden">댓글 달기</h3>
                     <div className="top">
-                        <label>닉네임</label><input type="text" className="inputName"/>
-                        <label>비밀번호</label><input type="password" className="inputPw"/>
+                        <label>닉네임</label><input type="text" className="inputName" placeholder="닉네임"/>
+                        <label>비밀번호</label><input type="password" className="inputPw" placeholder="비밀번호"/>
                     </div>
                     <div className="bottom">
                         <textarea name="" id="" className="textarea" placeholder="내용"></textarea>

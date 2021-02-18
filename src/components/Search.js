@@ -1,8 +1,13 @@
 import SearchList from './SearchList';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SEARCHDATA from '../json/searchData.json';
 
 function Search() {
+
+    useEffect(() => {
+        document.title = '종목검색 - 다양한 종목 검색 지원'
+    });
+
     let [searchStock, setSearchStock] = useState('');
 
     const searchItem = (e) => {

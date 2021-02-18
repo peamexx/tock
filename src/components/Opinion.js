@@ -1,7 +1,13 @@
 import OpinionItem from './OpinionItem';
 import OPINIONJSON from '../json/opinionData';
+import { useEffect } from 'react';
 
 function Opinion() {
+
+    useEffect(() => {
+        document.title = '토론 - 주가 전망은?'
+    });
+
     for(let key in OPINIONJSON[0]) {
         localStorage.setItem(key, OPINIONJSON[0][key]);
     };
