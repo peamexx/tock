@@ -1,6 +1,6 @@
 ![This is a alt text.](http://peamexx.com/img/titleImg.jpg)
 
-React.js를 활용한 주식 시세 사이트.
+> React.js를 활용한 주식 시세 사이트.
 
 [미리보기](https://peamexx.github.io/tock/)
 
@@ -36,6 +36,15 @@ ___
 | 종목검색      | 1. 종목 데이터 (json)<br /> 2. 검색(useState)     |
 | 토론      | 1. 공감/비공감 버튼, 전체 댓글 개수 (useState)<br /> 2. 댓글 수정(Javascript DOM) |
 
+___
+
+### 상세 내용 🔥🔥
+
+- 반응형
+    - H2 tag: 스크린리더기가 읽을 수 있는 화면 탐색용 텍스트 숨김 처리.
+    - modal div: 팝업 시 스크린리더가 본문 내용 탐색을 멈추고 modal로 포커스를 할 수 있도록 처리.
+    - button: 디자인 타입일 경우 type="button" 별도 명시.
+    - color css: 저시력 및 색각 이상 이용자를 위해 해시코드 대신 rgb 활용.
 ___
 
 ### 추가하고 싶은 기능 👀
