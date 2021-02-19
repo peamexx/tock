@@ -4,7 +4,7 @@
 
 [미리보기](https://peamexx.github.io/tock/)
 
-*블로그 [peamexx@tistory.com](http://peamexx.tistory.com)*
+*블로그 [peamexx.tistory.com](http://peamexx.tistory.com)*
 
 *이메일 peamexx@daum.net*
 
