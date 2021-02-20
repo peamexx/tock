@@ -1,6 +1,10 @@
-![This is a alt text.](http://peamexx.com/img/titleImg.jpg)
+![logo](http://peamexx.com/img/titleImg.jpg)
 
 > React.js를 활용한 주식 시세 사이트.
+
+![pc version](http://peamexx.com/img/pcp.jpg)
+
+![mobile version](http://peamexx.com/img/mom.jpg)
 
 [미리보기](https://peamexx.github.io/tock/)
 
