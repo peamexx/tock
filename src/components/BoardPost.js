@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import OpinionReplys from './OpinionReplys';
+import BoardReplys from './BoardReplys';
 
-function OpinionPost() {
+function BoardPost() {
     // .head 내용 불러오기
     let subject = localStorage.getItem('subject');
     let stockName = localStorage.getItem('stockName');
@@ -124,7 +124,7 @@ function OpinionPost() {
     };
 
     return (
-        <div className="opinionPost">
+        <div className="boardPost">
             <div className="inner">
                 <h2 className="hidden">토론 게시물 내용</h2>
                 <div className="post">
@@ -174,7 +174,7 @@ function OpinionPost() {
                     <h3 className="hidden">댓글 목록</h3>
                     <p className="tit">전체 댓글 <span className="num">[{ totalRplysCnt }]</span></p>
                     <ul className="contents">
-                        <OpinionReplys />
+                        <BoardReplys />
                     </ul>
                 </div>
                 <div className="writeBox">
@@ -193,4 +193,4 @@ function OpinionPost() {
     );
 };
 
-export default OpinionPost;
+export default BoardPost;

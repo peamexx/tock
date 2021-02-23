@@ -2,12 +2,12 @@ import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
 import SentimentDissatisfiedTwoToneIcon from '@material-ui/icons/SentimentDissatisfiedTwoTone';
 import { Link } from 'react-router-dom';
 
-function OpinionItem(props) {
+function BoardItem(props) {
     return (
         <tr key={ props.id }>
             <td className="subject">{ props.subject }</td>
             <td className="tit">
-                <Link to="/opinionPost">
+                <Link to="/no=24290">
                     <strong className="stockName">[{ props.stockName }]</strong>
                     <span className="title">{ props.title }</span>
                     <span className="replyCount">[{ props.replyCount }]</span>
@@ -29,4 +29,4 @@ function OpinionItem(props) {
     );
 }
 
-export default OpinionItem;
+export default BoardItem;

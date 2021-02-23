@@ -5,23 +5,22 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from './components/Home';
 import Favorite from './components/Favorite';
-import Opinion from './components/Opinion';
+import Board from './components/Board';
 import NotFound from './components/NotFound';
-import OpinionPost from './components/OpinionPost';
+import BoardPost from './components/BoardPost';
 import Search from './components/Search';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-      // basename="/tock"
       <Router basename="/tock"> 
         <div className="App">
           <Header />
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/favorite" component={Favorite} />
-              <Route path="/opinion" component={Opinion} />
-              <Route path="/opinionPost" component={OpinionPost} />
+              <Route path="/board" component={Board} />
+              <Route path="/no=24290" component={BoardPost} />
               <Route path="/search" component={Search} />
               <Route path="*" component={NotFound} />
             </Switch>

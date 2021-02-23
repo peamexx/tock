@@ -778,8 +778,8 @@ button {
     }
 };
 
-// Opinion.js
-.opinion {
+// Board.js
+.board {
     width: 100%;
     background-color: $gray;
     .inner {
@@ -867,7 +867,7 @@ button {
 }
 
 @media (max-width: $lg) {
-    .opinion {
+    .board {
         .inner {
             width: 100%;
         }
@@ -875,7 +875,7 @@ button {
 };
 
 @media (max-width: $md) {
-    .opinion {
+    .board {
         .inner {
             width: 100%;
             table {
@@ -929,8 +929,8 @@ button {
     }
 };
 
-// OpinionPost.js
-.opinionPost {
+// BoardPost.js
+.boardPost {
     width: 100%;
     background-color: $gray;
     .inner {
@@ -1099,7 +1099,7 @@ button {
 }
 
 @media (max-width: $md) {
-    .opinionPost {
+    .boardPost {
         .inner {
             width: 100%;
             .post {

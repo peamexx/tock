@@ -1,19 +1,19 @@
-import OpinionItem from './OpinionItem';
-import OPINIONJSON from '../json/opinionData';
+import BoardItem from './BoardItem';
+import BOARDJSON from '../json/boardData';
 import { useEffect } from 'react';
 
-function Opinion() {
+function Board() {
 
     useEffect(() => {
         document.title = '토론 - 주가 전망은?'
     });
 
-    for(let key in OPINIONJSON[0]) {
-        localStorage.setItem(key, OPINIONJSON[0][key]);
+    for(let key in BOARDJSON[0]) {
+        localStorage.setItem(key, BOARDJSON[0][key]);
     };
 
     return (
-        <div className="opinion">
+        <div className="board">
             <div className="inner">
                 <h2 className="hidden">토론 게시판</h2>
                 <table>
@@ -26,8 +26,8 @@ function Opinion() {
                             <th className="date">날짜</th>
                             <th className="likes">좋아요</th>
                         </tr>
-                        { OPINIONJSON.map((item) => 
-                            <OpinionItem 
+                        { BOARDJSON.map((item) => 
+                            <BoardItem 
                             key={ item.key }
                             id={ item.key }
                             subject={ item.subject } 
@@ -48,4 +48,4 @@ function Opinion() {
     );
 };
 
-export default Opinion;
+export default Board;

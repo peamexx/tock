@@ -1,4 +1,4 @@
-function OpinionReplys() {
+function BoardReplys() {
     let replys = [
         {
             key: 'r1',
@@ -71,4 +71,4 @@ function OpinionReplys() {
     );
 };
 
-export default OpinionReplys;
+export default BoardReplys;
