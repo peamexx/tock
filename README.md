@@ -1,10 +1,10 @@
-![logo](http://peamexx.com/img/titleImg.jpg)
+![tock logo img](https://user-images.githubusercontent.com/38338103/109740989-902aa680-7c0f-11eb-9209-b204d1d3afd2.jpg)
 
 > React.js를 활용한 주식 시세 사이트.
 
-![pc version](http://peamexx.com/img/pcp.jpg)
+![tock pc version img](https://user-images.githubusercontent.com/38338103/109741039-a46ea380-7c0f-11eb-8d96-cd3210762aca.jpg)
 
-![mobile version](http://peamexx.com/img/mom.jpg)
+![tock mobile version img](https://user-images.githubusercontent.com/38338103/109741069-b2bcbf80-7c0f-11eb-85f5-d4964f699e73.jpg)
 
 [미리보기](https://peamexx.github.io/tock/)
 
