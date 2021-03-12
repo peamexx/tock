@@ -452,11 +452,11 @@ button {
   left: none;
 }
 
-.favorite .inner .list table {
+.favorite .inner .list .table {
   width: 100%;
 }
 
-.favorite .inner .list table .item {
+.favorite .inner .list .table .item {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,12 +466,12 @@ button {
   text-align: left;
 }
 
-.favorite .inner .list table .item .bar {
+.favorite .inner .list .table .item .bar {
   margin-left: 2%;
   position: relative;
 }
 
-.favorite .inner .list table .item .bar .line {
+.favorite .inner .list .table .item .bar .line {
   position: absolute;
   top: 10px;
   bottom: 0;
@@ -480,7 +480,7 @@ button {
   background-color: #666666;
 }
 
-.favorite .inner .list table .item .bar .box {
+.favorite .inner .list .table .item .bar .box {
   position: absolute;
   top: 5px;
   left: -4px;
@@ -489,20 +489,13 @@ button {
   background-color: #666666;
 }
 
-.favorite .inner .list table .item .tit {
+.favorite .inner .list .table .item .tit {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.favorite .inner .list table .item .tit a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-right: 30px;
-}
-
-.favorite .inner .list table .item .tit a strong {
+.favorite .inner .list .table .item .tit strong {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -511,117 +504,117 @@ button {
   font-weight: bold;
 }
 
-.favorite .inner .list table .item .tit a .code {
+.favorite .inner .list .table .item .tit .code {
   color: #666666 !important;
 }
 
-.favorite .inner .list table .item .tit a .sub {
+.favorite .inner .list .table .item .tit .sub {
   color: #666666 !important;
 }
 
-.favorite .inner .list table .item .num {
+.favorite .inner .list .table .item .num {
   min-width: 12%;
 }
 
-.favorite .inner .list table .item .num .price {
+.favorite .inner .list .table .item .num .price {
   margin-bottom: 5px;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.favorite .inner .list table .item .num .volumn {
+.favorite .inner .list .table .item .num .volumn {
   color: #666666 !important;
 }
 
-.favorite .inner .list table .item .changeNum {
+.favorite .inner .list .table .item .changeNum {
   min-width: 7%;
   margin-right: 0;
   padding-top: 2px;
 }
 
-.favorite .inner .list table .item .changeNum .chgp {
+.favorite .inner .list .table .item .changeNum .chgp {
   margin-bottom: 5px;
 }
 
-.favorite .inner .list table .item td {
+.favorite .inner .list .table .item div {
   margin-right: 20px;
 }
 
-.favorite .inner .list table .c005930 .bar .line {
+.favorite .inner .list .table .c005930 .bar .line {
   height: 50%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c005930 .bar .box {
+.favorite .inner .list .table .c005930 .bar .box {
   top: 15px;
   height: 8%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c035420 .bar .line {
+.favorite .inner .list .table .c035420 .bar .line {
   height: 60%;
   background-color: #ff4444;
 }
 
-.favorite .inner .list table .c035420 .bar .box {
+.favorite .inner .list .table .c035420 .bar .box {
   top: 12px;
   height: 25%;
   background-color: #ff4444;
 }
 
-.favorite .inner .list table .c992028 .bar .line {
+.favorite .inner .list .table .c992028 .bar .line {
   top: 5px;
   height: 80%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c992028 .bar .box {
+.favorite .inner .list .table .c992028 .bar .box {
   top: 15px;
   height: 50%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c068270 .bar .line {
+.favorite .inner .list .table .c068270 .bar .line {
   top: 5px;
   height: 90%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c068270 .bar .box {
+.favorite .inner .list .table .c068270 .bar .box {
   top: 10px;
   height: 50%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c990411 .bar .line {
+.favorite .inner .list .table .c990411 .bar .line {
   height: 50%;
   background-color: #ff4444;
 }
 
-.favorite .inner .list table .c990411 .bar .box {
+.favorite .inner .list .table .c990411 .bar .box {
   top: 12px;
   height: 30%;
   background-color: #ff4444;
 }
 
-.favorite .inner .list table .c000660 .bar .line {
+.favorite .inner .list .table .c000660 .bar .line {
   height: 50%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .c000660 .bar .box {
+.favorite .inner .list .table .c000660 .bar .box {
   top: 15px;
   height: 15%;
   background-color: #17a6ff;
 }
 
-.favorite .inner .list table .cFB .bar .line {
+.favorite .inner .list .table .cFB .bar .line {
   top: 0;
   height: 80%;
   background-color: #ff4444;
 }
 
-.favorite .inner .list table .cFB .bar .box {
+.favorite .inner .list .table .cFB .bar .box {
   top: 15px;
   height: 20%;
   background-color: #ff4444;
@@ -668,19 +661,19 @@ button {
   .favorite .inner .setting ul li:last-child {
     padding-right: 2%;
   }
-  .favorite .inner .list table tbody .item .tit a strong {
+  .favorite .inner .list .table tbody .item .tit strong {
     font-size: 1.1rem;
   }
-  .favorite .inner .list table tbody .item .tit .code {
+  .favorite .inner .list .table tbody .item .tit .code {
     display: block;
   }
-  .favorite .inner .list table tbody .item .num .price {
+  .favorite .inner .list .table tbody .item .num .price {
     font-size: 1.1rem;
   }
-  .favorite .inner .list table tbody .item .num .volumn {
+  .favorite .inner .list .table tbody .item .num .volumn {
     font-size: 0.9rem;
   }
-  .favorite .inner .list table tbody .item .changeNum {
+  .favorite .inner .list .table tbody .item .changeNum {
     font-size: 0.9rem;
   }
 }
@@ -692,42 +685,42 @@ button {
   .favorite .inner .setting ul li span {
     font-size: 0.9rem;
   }
-  .favorite .inner .list table tbody .item .tit {
+  .favorite .inner .list .table tbody .item .tit {
     -webkit-box-flex: unset;
         -ms-flex-positive: unset;
             flex-grow: unset;
     width: 65%;
   }
-  .favorite .inner .list table tbody .item .tit a strong {
+  .favorite .inner .list .table tbody .item .tit strong {
     font-size: 1rem;
   }
-  .favorite .inner .list table tbody .item .tit a .code {
+  .favorite .inner .list .table tbody .item .tit .code {
     font-size: 0.8rem;
   }
-  .favorite .inner .list table tbody .item .num {
+  .favorite .inner .list .table tbody .item .num {
     width: 15%;
     min-width: 0;
   }
-  .favorite .inner .list table tbody .item .num .price {
+  .favorite .inner .list .table tbody .item .num .price {
     font-size: 1rem;
   }
-  .favorite .inner .list table tbody .item .changeNum {
+  .favorite .inner .list .table tbody .item .changeNum {
     width: 10%;
     min-width: 0;
   }
 }
 
 @media (max-width: 500px) {
-  .favorite .inner .list table tbody .item .tit {
+  .favorite .inner .list .table tbody .item .tit {
     width: 50%;
   }
-  .favorite .inner .list table tbody .item .num {
+  .favorite .inner .list .table tbody .item .num {
     width: 20%;
   }
-  .favorite .inner .list table tbody .item .num .volumn {
+  .favorite .inner .list .table tbody .item .num .volumn {
     font-size: 0.8rem;
   }
-  .favorite .inner .list table tbody .item .changeNum {
+  .favorite .inner .list .table tbody .item .changeNum {
     width: 15%;
   }
 }

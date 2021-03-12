@@ -148,9 +148,6 @@ function Favorite() {
           </ul>
         </div>
         <div className="list">
-          <table>
-            <thead></thead>
-            <tbody>
               { stock.map((item) => 
                 <FavoriteItem 
                 key={ item.key }
@@ -165,9 +162,6 @@ function Favorite() {
                 delay={ item.delay }
                 />
               ) }
-            </tbody>
-            <tfoot></tfoot>
-          </table>
         </div>
         <Modal />
       </div>
