@@ -747,6 +747,199 @@ button {
     };
 }
 
+// StockEod.js
+.stockEod {
+    width: 100%;
+    background-color: $gray;
+    .inner {
+        width: 1000px;
+        height: 100%;
+        min-height: 100vh;
+        margin: auto;
+        padding-bottom: 100px;
+        background-color: $white;
+        overflow: hidden;
+        .top {
+            margin-top: 70px;
+            p {
+                padding: 10px;
+                background-color: $blue;
+                text-align: center;
+                line-height: 1.5;
+                color: #fff;
+            }
+        }
+        .title {
+            padding: 30px;
+            border-bottom: 1px solid $gray;
+            overflow: hidden;
+            .left {
+                position: relative;
+                .tit {
+                    padding: 0 10px 0 20px;
+                    font: {
+                        size: 1.5rem;
+                        weight: bold;
+                    }
+                }
+                .sym {
+                    position: absolute;
+                    top: 4px;
+                    padding-left: 10px;
+                    border-left: 2px solid $darkgray;
+                    color: $darkgray;
+                }
+                .exchange {
+                    position: absolute;
+                    top: 2px;
+                    left: 132px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: $darkblue;
+                    color: $white;
+                    font-size: 0.8rem;
+                }
+            }
+            .right {
+                .open {
+                    position: relative;
+                    display: block;
+                    text-align: right;
+                    font: {
+                        size: 1.5rem;
+                        weight: bold;
+                    }
+                    &:after {
+                        content: '전일 종가';
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        right: 85px;
+                        padding: 5px;
+                        border-radius: 5px;
+                        background-color: #333333;
+                        color: white;
+                        font: {
+                            size: 0.8rem;
+                            weight: 400; 
+                        }
+                    }
+                }
+            }
+            > div {
+                float: left;
+                width: 50%;
+            }
+        }
+        .titleDes {
+            border-bottom: 1px solid $gray;
+            overflow: hidden;
+            ul {
+                li {
+                    float: left;
+                    width: 50%;
+                    font-size: 1rem;
+                    .tit {
+                        display: inline-block;
+                        min-width: 100px;
+                        background-color: $gray;
+                        text-align: center;
+                        color: $black;
+                    }
+                    .num {
+                        display: inline-block;
+                        width: calc(100% - 100px);
+                        text-align: right;
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        border-bottom: 1px solid $gray;
+                    }
+                    span {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .eodData {
+            table {
+                width: 100%;
+                tr {
+                    th {
+                        width: 20%;
+                        padding: 10px;
+                        background-color: $black;
+                        color: $white;
+                        font-size: 0.9rem;
+                    }
+                    td {
+                        width: 20%;
+                        padding: 10px;
+                        border-bottom: 1px solid $gray;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $lg) {
+        .inner {
+            width: 100%;
+        }
+    };
+    @media (max-width: $md) {
+        .inner {
+            .top {
+                font-size: 0.9rem;
+            }
+            .title {
+                padding: 30px 10px;
+                .left {
+                    .tit {
+                        padding-left: 0;
+                        font-size: 1.3rem;
+                    }
+                    .exchange {
+                        left: 108px;
+                        font-size: 0.7rem;
+                    }
+                }
+                .right {
+                    .open {
+                        font-size: 1.3rem;
+                        &:after {
+                            top: 1px;
+                            right: 70px;
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+            .titleDes {
+                ul {
+                    li {
+                        float: none;
+                        width: 100%;
+                        font-size: 0.9rem;
+                        &:last-child {
+                            border-top: 1px solid $gray;
+                        }
+                    }
+                }
+            }
+            .eodData {
+                table {
+                    tr {
+                        td {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    };
+}
+
 // Board.js
 .board {
     width: 100%;
@@ -1225,7 +1418,6 @@ button {
             }
     };
 }
-
 
 // Footer.js
 .footer {
