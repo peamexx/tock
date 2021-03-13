@@ -651,8 +651,7 @@ button {
                 }
                 .list {
                     .table {
-                        tbody {
-                            .item {
+                        .item {
                                 .tit {
                                     strong {
                                         font-size: 1.1rem;
@@ -672,7 +671,6 @@ button {
                                 .changeNum {
                                     font-size: 0.9rem;
                                 }
-                            }
                         }
                     }
                 }
@@ -692,8 +690,7 @@ button {
                 }
                 .list {
                     .table {
-                        tbody {
-                            .item {
+                        .item {
                                 .tit {
                                     flex-grow: unset;
                                     width: 65%;
@@ -715,7 +712,6 @@ button {
                                     width: 10%;
                                     min-width: 0;
                                 }
-                            }
                         }
                     }
                 }
@@ -725,8 +721,7 @@ button {
             .inner {
                 .list {
                     .table {
-                        tbody {
-                            .item {
+                        .item {
                                 .tit {
                                     width: 50%;
                                 }
@@ -739,7 +734,6 @@ button {
                                 .changeNum {
                                     width: 15%;
                                 }
-                            }
                         }
                     }
                 }

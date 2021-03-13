@@ -661,19 +661,19 @@ button {
   .favorite .inner .setting ul li:last-child {
     padding-right: 2%;
   }
-  .favorite .inner .list .table tbody .item .tit strong {
+  .favorite .inner .list .table .item .tit strong {
     font-size: 1.1rem;
   }
-  .favorite .inner .list .table tbody .item .tit .code {
+  .favorite .inner .list .table .item .tit .code {
     display: block;
   }
-  .favorite .inner .list .table tbody .item .num .price {
+  .favorite .inner .list .table .item .num .price {
     font-size: 1.1rem;
   }
-  .favorite .inner .list .table tbody .item .num .volumn {
+  .favorite .inner .list .table .item .num .volumn {
     font-size: 0.9rem;
   }
-  .favorite .inner .list .table tbody .item .changeNum {
+  .favorite .inner .list .table .item .changeNum {
     font-size: 0.9rem;
   }
 }
@@ -685,42 +685,42 @@ button {
   .favorite .inner .setting ul li span {
     font-size: 0.9rem;
   }
-  .favorite .inner .list .table tbody .item .tit {
+  .favorite .inner .list .table .item .tit {
     -webkit-box-flex: unset;
         -ms-flex-positive: unset;
             flex-grow: unset;
     width: 65%;
   }
-  .favorite .inner .list .table tbody .item .tit strong {
+  .favorite .inner .list .table .item .tit strong {
     font-size: 1rem;
   }
-  .favorite .inner .list .table tbody .item .tit .code {
+  .favorite .inner .list .table .item .tit .code {
     font-size: 0.8rem;
   }
-  .favorite .inner .list .table tbody .item .num {
+  .favorite .inner .list .table .item .num {
     width: 15%;
     min-width: 0;
   }
-  .favorite .inner .list .table tbody .item .num .price {
+  .favorite .inner .list .table .item .num .price {
     font-size: 1rem;
   }
-  .favorite .inner .list .table tbody .item .changeNum {
+  .favorite .inner .list .table .item .changeNum {
     width: 10%;
     min-width: 0;
   }
 }
 
 @media (max-width: 500px) {
-  .favorite .inner .list .table tbody .item .tit {
+  .favorite .inner .list .table .item .tit {
     width: 50%;
   }
-  .favorite .inner .list .table tbody .item .num {
+  .favorite .inner .list .table .item .num {
     width: 20%;
   }
-  .favorite .inner .list .table tbody .item .num .volumn {
+  .favorite .inner .list .table .item .num .volumn {
     font-size: 0.8rem;
   }
-  .favorite .inner .list .table tbody .item .changeNum {
+  .favorite .inner .list .table .item .changeNum {
     width: 15%;
   }
 }
