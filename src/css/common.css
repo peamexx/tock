@@ -752,6 +752,14 @@ button {
   color: #fff;
 }
 
+.stockEod .inner .top2 {
+  margin-top: 0;
+}
+
+.stockEod .inner .top2 p {
+  background-color: #0b5ab0;
+}
+
 .stockEod .inner .title {
   padding: 30px;
   border-bottom: 1px solid #efefef;
@@ -763,7 +771,7 @@ button {
 }
 
 .stockEod .inner .title .left .tit {
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -779,7 +787,7 @@ button {
 .stockEod .inner .title .left .exchange {
   position: absolute;
   top: 2px;
-  left: 132px;
+  left: 118px;
   padding: 5px;
   border-radius: 5px;
   background-color: #0b5ab0;

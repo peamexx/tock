@@ -763,6 +763,12 @@ button {
                 color: #fff;
             }
         }
+        .top2 {
+            margin-top: 0;
+            p {
+                background-color: $darkblue;
+            }
+        }
         .title {
             padding: 30px;
             border-bottom: 1px solid $gray;
@@ -770,7 +776,7 @@ button {
             .left {
                 position: relative;
                 .tit {
-                    padding: 0 10px 0 20px;
+                    padding: 0 10px 0 0;
                     font: {
                         size: 1.5rem;
                         weight: bold;
@@ -786,7 +792,7 @@ button {
                 .exchange {
                     position: absolute;
                     top: 2px;
-                    left: 132px;
+                    left: 118px;
                     padding: 5px;
                     border-radius: 5px;
                     background-color: $darkblue;
